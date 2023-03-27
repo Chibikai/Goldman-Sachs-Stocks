@@ -2,5 +2,6 @@
 
 Goldman Sachs dataset
 
-- kori
+- Kori
+- Krista
 
