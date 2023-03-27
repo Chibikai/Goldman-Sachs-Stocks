@@ -1,6 +1,6 @@
 # Final Project
-
-Goldman Sachs dataset
+## The Intangibles
+### Goldman Sachs dataset
 
 - Mary
 - Kori
