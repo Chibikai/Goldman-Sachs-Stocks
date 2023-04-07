@@ -1,0 +1,65 @@
+(function() {
+    var ref = encodeURIComponent((parent !== window) ? document.referrer : document.location);
+    
+        
+        
+        var r = new XMLHttpRequest();
+        r.withCredentials = true;
+        var s ="r=" + ref;
+        if (!(typeof dianomi_tag_params_0x73BA49B019E14DEA89497CF1F1BF39EA === "undefined")) {
+            
+            const m = document.createElement("iframe");
+            m.id = "multisync-iframe";
+            m.sandbox = "allow-forms allow-scripts allow-popups allow-pointer-lock allow-same-origin";
+            m.height = 0; m.width = 0; m.marginwidth = 0; m.marginheight = 0; m.scrolling="no"; m.frameborder = 0; m.style = "border: 0px; display: none;";
+            const gdpr = 0;
+            const gdpr_consent = encodeURIComponent(dianomi_tag_params_0x73BA49B019E14DEA89497CF1F1BF39EA["consent_string"] ?? '');
+            const us_privacy = dianomi_tag_params_0x73BA49B019E14DEA89497CF1F1BF39EA["us_privacy"] ?? "";
+            let url = "https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=dianomi&endpoint=us-east";
+            url +="&gdpr=" + gdpr + "&gdpr_consent=" + gdpr_consent;
+            m.src = url;
+            document.body.appendChild(m);
+
+            let isDev = !!""
+
+            function getEmptyIframe() {
+                let frame = document.createElement('iframe');
+                frame.setAttribute('frameborder', 0);
+                frame.setAttribute('scrolling', 'no');
+                frame.setAttribute('marginheight', 0);
+                frame.setAttribute('marginwidth', 0);
+                frame.setAttribute('TOPMARGIN', 0);
+                frame.setAttribute('LEFTMARGIN', 0);
+                frame.setAttribute('allowtransparency', 'true');
+                frame.setAttribute('width', 0);
+                frame.setAttribute('height', 0);
+                frame.style = 'border: 0px; display: none;';
+                return frame;
+            }
+            if (dianomi_tag_params_0x73BA49B019E14DEA89497CF1F1BF39EA["include_rtb"] === 2) {
+                let cookieSyncIframe = getEmptyIframe();
+                cookieSyncIframe.id = 'dianomi-cookie-sync-iframe';
+                let cookieSyncIframeURL = `https://${ isDev ? 'dev' : 'www'}.dianomi.com/prebid/cookie_sync.html?`;
+                cookieSyncIframeURL += 'gdpr=' + gdpr + '&gdpr_consent=' + gdpr_consent;
+                cookieSyncIframeURL += '&us_privacy=' + us_privacy;
+                cookieSyncIframeURL += '&bidders=adf,rubicon,grid,adform,pubmatic,openx,freewheelssp,undertone,amx';
+                cookieSyncIframe.src = cookieSyncIframeURL;
+                document.body.appendChild(cookieSyncIframe);
+            }
+        }
+
+        
+
+
+
+    
+        for (var property in dianomi_tag_params_0x73BA49B019E14DEA89497CF1F1BF39EA) {
+            if (dianomi_tag_params_0x73BA49B019E14DEA89497CF1F1BF39EA.hasOwnProperty(property)  && dianomi_tag_params_0x73BA49B019E14DEA89497CF1F1BF39EA[property] !== null) {
+                s += "&" + property + "=" + encodeURIComponent(dianomi_tag_params_0x73BA49B019E14DEA89497CF1F1BF39EA[property]);
+            }
+        }
+        r.open("GET", "https://data.dianomi.com/frontend/pixel?" + s, true);
+        r.send();
+    
+
+    })();

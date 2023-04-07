@@ -1,0 +1,559 @@
+(function(){
+  
+var gaName = 'ishares_fa_sp';
+//var gaId = 'UA-44058249-9';
+var gaId = 'UA-65382410-35';
+
+
+function ic_init(a, dc, b){var c=function(a,b){var c=dc.createElement("script");c.src=a,c.onload=c.onreadystatechange=function(){this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(c.onreadystatechange=c.onload=null,b())};var d=dc.getElementsByTagName("head")[0];(d||dc.body).appendChild(c)};!function(){0!=a.length?c(a.shift(),arguments.callee):b&&b()}()}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', gaId, 'auto', gaName);
+ga(gaName+'.send', 'pageview');  
+
+if(top==self){var doc=document;var win=window;}else{try{var doc=window.parent.document;var win=window.parent;}catch(e){}}; 
+
+var rnd = function(a, b){
+    return Math.floor(Math.random()*(b-a+1)+a);
+};
+
+var rn = rnd(0, 10000);
+
+var c_macro = (typeof clc_macro == 'undefined' || clc_macro == '' ? "" : clc_macro);
+var lineItemId = (typeof ic_lineItemId == 'undefined' || ic_lineItemId == '' ? "0" : ic_lineItemId);
+var adUnitId = (typeof ic_adUnitId == 'undefined' || ic_adUnitId == '' ? "0" : ic_adUnitId);
+var advertId = (typeof ic_advertId == 'undefined' || ic_advertId == '' ? "0" : ic_advertId); 
+var display = (typeof ic_display == 'undefined' || ic_display == '' ? "d" : ic_display);
+
+var hostname = win.location.hostname.replace('www.','');
+var path = (hostname == "localhost") ? '' : 'https://iclnd.investingchannel.com/ishares/index-sp-bond-ibar/';
+
+//console.log(display);
+var videoSrc = "";
+var posterSrc = "";
+
+
+
+var ic_trackers = {
+  "d_MOAT": "https://z.moatads.com/mindshareblackrock369117212900/moatad.js#moatClientLevel2=25931&moatClientLevel1=1074571564&moatClientLevel3=1078873067&moatClientLevel4=1x1_Site_Served&zMoatSSTG=1",
+  "t_MOAT": "https://z.moatads.com/mindshareblackrock369117212900/moatad.js#moatClientLevel2=25931&moatClientLevel1=1074571564&moatClientLevel3=1078873079&moatClientLevel4=1x1_Site_Served&zMoatSSTG=1",
+
+  "d_Collapsed_Impression": "https://bs.serving-sys.com/Serving/adServer.bs?cn=display&c=19&pli=1078873067&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488245&ord="+rnd(0, 1000000000),
+  "t_Collapsed_Impression": "https://bs.serving-sys.com/Serving/adServer.bs?cn=display&c=19&pli=1078873079&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488266&ord="+rnd(0, 1000000000),
+
+  "d_Collapsed_LearnMoreCTA_Impression": "https://bs.serving-sys.com/Serving/adServer.bs?cn=display&c=19&pli=1078873072&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488254&ord="+rnd(0, 1000000000),
+  "t_Collapsed_LearnMoreCTA_Impression": "https://bs.serving-sys.com/Serving/adServer.bs?cn=display&c=19&pli=1078873084&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488275&ord="+rnd(0, 1000000000),
+
+  "d_Collapsed_Logo_Click": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873069&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488248&ord="+rnd(0, 1000000000),
+  "t_Collapsed_Logo_Click": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873066&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488242&ord="+rnd(0, 1000000000),
+
+  "d_Collapse_Clicks": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873085&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488279&ord="+rnd(0, 1000000000),
+  "t_Collapse_Clicks": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873083&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488272&ord="+rnd(0, 1000000000),
+
+
+
+  "d_Expanded_Clicks": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873081&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488269&ord="+rnd(0, 1000000000),
+  "t_Expanded_Clicks": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873075&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488260&ord="+rnd(0, 1000000000),
+
+  "d_Expanded_LearnMoreCTA_Click": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873087&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488284&ord="+rnd(0, 1000000000),
+  "t_Expanded_LearnMoreCTA_Click": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873077&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488263&ord="+rnd(0, 1000000000),
+
+  "d_Expanded_Logo_Click": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873071&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488251&ord="+rnd(0, 1000000000),
+  "t_Expanded_Logo_Click": c_macro+"https://bs.serving-sys.com/Serving/adServer.bs?cn=trd&pli=1078873074&gdpr=${GDPR}&gdpr_consent=${GDPR_CONSENT_68}&us_privacy=${US_PRIVACY}&adid=1089488257&ord="+rnd(0, 1000000000),
+
+
+}
+
+var panName = ['Video - Panel', '', ''];
+
+var tail = 'line='+lineItemId+'&unit='+adUnitId+'&advert='+advertId+'&ganame='+gaName+'&gaid='+gaId+'&display='+display+'&panname='+panName+'&cmacro='+escape(c_macro);
+
+var pages = [path+"brss.html?"+tail, ""];
+
+var activePan = -1;
+
+//console.log(c_macro);
+
+var stle = ' \
+@font-face {\
+  font-family: "BLKFort-Extrabold";\
+  src: url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Extrabold/BLKFort-Extrabold.eot");\
+  src: url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Extrabold/BLKFort-Extrabold.eot") format("embedded-opentype"),\
+        url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Extrabold/BLKFort-Extrabold.woff2") format("woff2"),\
+        url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Extrabold/BLKFort-Extrabold.woff") format("woff"),\
+        url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Extrabold/BLKFort-Extrabold.ttf") format("truetype"),\
+        url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Extrabold/BLKFort-Extrabold.svg#BLKFortExtraBold") format("svg");\
+}\
+@font-face {\
+  font-family: "BLKFort-Book";\
+  src: url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Book/BLKFort-Book.eot");\
+  src: url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Book/BLKFort-Book.eot") format("embedded-opentype"),\
+        url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Book/BLKFort-Book.woff2") format("woff2"),\
+        url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Book/BLKFort-Book.woff") format("woff"),\
+        url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Book/BLKFort-Book.ttf") format("truetype"),\
+        url("https://iclnd.investingchannel.com/ishares/fonts/BLKFort-Book/BLKFort-Book.svg#FortBook") format("svg");\
+}\
+  \
+.foot-rn {position: fixed; z-index: 2147483647; top: 100%; left: 0; min-width: 320px; width: 100%; height: 65px; font-family: "BLKFort-Extrabold", Helvetica, Arial, sans-serif;}\
+.foot-rn div {box-sizing: border-box;}\
+.foot-rn a {display: block !important; color: #000; text-decoration: none;}\
+.cover-rn{border-top: 0px solid rgba(0, 0, 0, .5); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #d6d5dd; z-index: 8; box-shadow: 0 -3px 2px 0 rgba(214, 210, 210, 0.3);}\
+.driver-rn {position: absolute; top: 0px; width: 100%; transition: all .3s ease-in-out; transform: translateY(0);}\
+.on-rn {position:absolute; top: -24px; width: 27px; height:25px; background: url('+path+'images/on.png) 0px 0px no-repeat; cursor: pointer;}\
+.box-rn {position: relative; margin: 0 auto; border-top: 0px solid rgba(0, 0, 0, .5); max-width: 900px; z-index: 10; background: #d6d5dd;}\
+.nav-rn {width: 100%; display: flex; justify-content: space-between; flex-wrap: nowrap; align-items: center;}\
+.nav-left-rn {width: 65%;}\
+/*.off-rn {position: absolute; width: 43px; height: 100%; z-index: 20; background: url('+path+'images/off.png)  0px 15px no-repeat; cursor: pointer;}*/\
+.off-rn{ position: absolute; overflow: hidden; width: 35px; height: 35px; z-index: 20; top: 50%; transform: translateY(-50%); cursor: pointer;}\
+.pan_off-rn{ position: absolute; overflow: hidden; width: 35px; height: 35px; z-index: 20; top: 5px; right: 5px; cursor: pointer;}\
+.off-rn .lt, .off-rn .rt, .pan_off-rn .lt, .pan_off-rn .rt{ position: absolute; width: 60%; height: 4px; left: 50%; top: 50%; background: #000;}\
+.off-rn .lt, .pan_off-rn .lt{transform: translateX(-50%) translateY(-50%) rotate(45deg);}\
+.off-rn .rt, .pan_off-rn .rt{transform: translateX(-50%) translateY(-50%) rotate(-45deg);}\
+.message-rn{display: flex; justify-content: center;}\
+.messagetxt-rn{text-align: left;font-size: 27px; line-height: 27px;}\
+.nav-right-rn {width: 20%;}\
+.nav-extra-rn {width: 15%; margin: 9px 0 3px;}\
+.btns-rn{cursor: pointer;}\
+.logo-rn{ }\
+.txt-rn{transition: opacity .2s ease-in-out; transition: all .2s ease-in-out; white-space: nowrap; }\
+.panbtn-rn {margin: 0 auto; font-size: 17px; padding: 9px 15px; color: #000; background: #fff; text-align: center; transition: all .2s ease-in-out; overflow: hidden;}\
+.panels-rn {position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 98%; background: #e0e0e0; transition: all .3s ease-in-out; backface-visibility: hidden; height: 40px; width: 1066px; box-shadow: 0 0 15px 3px rgba(0,0,0,.2);}\
+.framehug-rn {position: absolute; text-align: center; background: #d6d5dd; top: 0px; right: 0px; bottom: 0px; left: 0px; } \
+.framehug-rn iframe{margin: 0 auto; width: 1037px; height: calc(100% - 222px); border: 4px solid #000; border-radius: 4px; background: #fff;}\
+.pan_header-rn {display: flex; align-items: start; width: 89%; margin: 20px auto 20px;} \
+.pan-logo-rn{margin: 0px 9px; text-align: left; width: 145px}\
+.pan-logo-rn img{width: 100%}\
+.pan-message-rn{font-size: 26px; line-height: 32px;}\
+.pan-spdji-rn {text-align: left; width: 220px;}\
+.pan-spdji-rn img {width: 100%;}\
+.info-cap-rn, .pan-copy-rn{font-family: "BLKFort-Book", Helvetica, Arial, sans-serif;}\
+.info-cap-rn{position: relative; right: 20px; text-align: right; text-decoration: underline; cursor: pointer; white-space: nowrap; font-size: 14px;}\
+.info-cap-bold-rn{font-size: 24px; text-align: left; margin: 19px 30px 0;}\
+.info-wrapp-rn{position: absolute; background: #d6d5dd; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; transition: all .3s ease-in-out;}\
+.info-frame-rn{height: calc(100% - 101px); border: none !important;}\
+.info-close-rn{position: absolute; top: 44px; right: 85px; width: 25px; cursor: pointer;}\
+.pan-copy-rn{font-size: 16px; width: 80%; margin: 16px auto;}\
+.pan-learn-more-rn{background: #fff; display: inline-block; padding: 10px 20px; font-size: 19px;}\
+.vid-frame-rn{height: calc(100% - 222px); margin: 0 auto;}\
+.vid-wrapp-rn{position: relative; height: 100%; display: inline-block; }\
+.vid-inner-rn{position: absolute; top: 0; right: 0; bottom: 0; left: 0;}\
+.hover-save {position: absolute; bottom: -15px; height: 15px; width: 100%;}\
+.gray-small-rn {position: absolute; bottom: 0; width: 100%; height: 0; z-index: 20; background: rgba(0, 0, 0, .3); transition: all .3s ease-in-out; backface-visibility: hidden;}\
+.gray-rn {position: absolute; /*backdrop-filter: blur(10px);*/ top: 10px; width: 100%; background: rgba(0, 0, 0, .3); transition: all .3s ease-in-out; backface-visibility: hidden; height: 40px;}\
+.hide-rn{ visibility: hidden; opacity: 0;}\
+\
+@media (max-width: 425px) {\
+}\
+';
+stle = stle.replace(/-rn/gi, rn);
+ 
+
+var html = ' \
+<div class="foot-rn no-print">\
+  <div class="on-rn"></div>\
+  <div class="driver-rn">\
+  <a href="'+ic_trackers[display+'_Collapse_Clicks']+'" target="_blank"><div class="cover-rn clicker-rn" data-ga="Base Unit*Click*Body"></div></a>\
+  <div class="off-rn"><div class="lt"></div><div class="rt"></div></div>\
+    <div class="box-rn">\
+      <div class="nav-rn">\
+        <div class="nav-extra-rn">\
+          <a href="'+ic_trackers[display+'_Collapsed_Logo_Click']+'" target="_blank">\
+            <div class="logo-rn clicker-rn" data-ga="Base Unit*Click*Logo"><img src="'+path+'images/ishares-logo.svg"></div>\
+          </a>\
+        </div>\
+        <div class="nav-left-rn">\
+          <a href="'+ic_trackers[display+'_Collapse_Clicks']+'" target="_blank"><div class="message-rn clicker-rn" data-ga="Base Unit*Click*Message"><div class="messagetxt-rn">Think index means average?<br>Think again with iShares Core ETFs</div></div></a>\
+        </div>\
+        <div class="nav-right-rn">\
+          <div class="btns-rn btn0-rn" data-sel="0">\
+            <div class="panbtn-rn">\
+            <div class="txt-rn txt0-rn">LEARN MORE</div>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
+    </div>\
+    <div class="panels-rn panel0-rn" data-mh="800">\
+      <div class="framehug-rn" style="text-align: center">\
+        <div style="display: flex;  align-items: stretch; overflow: hidden; margin: 35px 20px 15px;">\
+          <div style="max-width: 165px;">\
+          <a href="'+ic_trackers[display+'_Expanded_Logo_Click']+'" target="_blank">\
+            <div class="pan-logo-rn clicker-rn"  data-ga="Video - Panel*Click*Logo"><img src="'+path+'images/ishares-logo.svg"></div>\
+          </a>\
+          </div>\
+          <div style="width: 100%">\
+          <a href="'+ic_trackers[display+'_Expanded_Clicks']+'" target="_blank">\
+            <div class="pan-message-rn clicker-rn" data-ga="Video - Panel*Click*Message">Index the core with iShares Core ETFs<br>\
+            <span style="display: block; padding: 5px 40px; font-family: BLKFort-Book, Helvetica, Arial, sans-serif; font-size: 17px; line-height: 22px;">Celebrating 10 years of competitive performance, low cost, and tax efficiency</span></div>\
+          </a>\
+          </div>\
+          <div style="max-width: 210px;">\
+          <!--<a href="'+ic_trackers[display+'_Expanded_Logo_Click']+'" target="_blank">\
+            <div class="pan-spdji-rn clicker-rn"  data-ga="Video - Panel*Click*SPDJI-Logo"><img src="'+path+'images/spdji-logo.png"></div>\
+          </a>-->\
+          </div>\
+          <div class="info-cap-rn">Important information</div>\
+        </div>\
+        <!--<div class="info-cap-rn">Important information</div>-->\
+        <div class="info-wrapp-rn hide-rn">\
+        <div class="pan-logo-rn" style="margin: 15px 0 0px 30px;"><img src="'+path+'images/ishares-logo.svg"></div>\
+        <!--<div class="info-cap-bold-rn">Important Information</div>-->\
+        <iframe class="info-frame-rn" src="'+path+'info.html" frameborder="0" scrolling="no" height="100%" width="100%" allowfullscreen></iframe>\
+        <div class="info-close-rn"><img src="'+path+'images/closex.png" width="100%"></div>\
+        </div>\
+        \
+        <iframe class="iframe0-rn" src="" frameborder="0" scrolling="yes" height="100%" width="100%" allowfullscreen></iframe> \
+        \
+        <!--<div class="vid-frame-rn">\
+        <div class="vid-wrapp-rn">\
+          <img src="'+path+'images/sspp.png" height="100%" style="height: 100% !important; border: 5px solid #000; border-radius: 5px; max-height: 400px;">-->\
+          <!--<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA4CAQAAAChp5VTAAAARElEQVR42u3PAQkAAAACoPp/uh+hD2xOVERERERERERERERERERERERERERERERERERERERERERERERERERERERE5DcyEV8AOSmo/K4AAAAASUVORK5CYII=" height="100%" style="height: 100% !important; border: 1px solid red;">-->\
+          <!--<a href="'+ic_trackers[display+'_Expanded_Clicks']+'" target="_blank"><div class="vid-inner-rn"></div></a>\
+        </div>\
+        </div>-->\
+        <div class="pan-copy-rn"></div>\
+        <a href="'+ic_trackers[display+'_Expanded_LearnMoreCTA_Click']+'" target="_blank"><div class="pan-learn-more-rn clicker-rn"  data-ga="Video - Panel*Click*Learn More">LEARN MORE</div></a>\
+      </div> \
+      <div class="hover-save"></div>\
+      <div class="pan_off-rn" data-sel="0"><div class="lt"></div><div class="rt"></div></div>\
+    </div>\
+    \
+    <div class="gray-rn"></div>\
+  </div>\
+</div>\
+';
+html = html.replace(/-rn/gi, rn);
+
+
+var timers = {};
+function timeSpentStart(timer){
+    timer = timer.split(' ').join('_');
+    timers[timer+'_a'] = 1;
+    timers[timer+'_b'] = setInterval(function(){
+        timers[timer+'_a'] ++;     
+    }, 1000);
+}
+
+function timeSpentEnd(timer){
+    timer = timer.split(' ').join('_');
+    clearInterval(timers[timer+'_b']);
+    return timers[timer+'_a'];
+}
+
+function getGa2(a, b, c, d){
+  c = c+lineItemId+'|'+adUnitId+'|'+advertId
+  if(d){
+     ga(gaName+'.send', 'event', display+'_'+a, b, c, d);
+  }else{
+     ga(gaName+'.send', 'event', display+'_'+a, b, c);
+  }
+}
+
+
+
+var appendStyle = function(dc, ht){
+  var head = dc.head || dc.getElementsByTagName('head')[0];
+  var style = document.createElement('style');
+  style.type = 'text/css';
+  style.appendChild(document.createTextNode(ht));
+  head.appendChild(style);
+}
+
+var appendDiv = function(dc, ht){
+    var a = document.createElement('div');
+    a.innerHTML = ht;
+    dc.body.appendChild(a);
+}
+
+var getElement = function(dc, el){
+    return dc.querySelector(el);
+}
+
+
+
+appendStyle(doc, stle);
+appendDiv(doc, html);
+
+var foot = getElement(doc, '.foot'+rn);
+var btns = doc.querySelectorAll('.btns'+rn);
+var panOff = doc.querySelectorAll('.pan_off'+rn);
+var driver = getElement(doc, '.driver'+rn);
+var box = getElement(doc, '.box'+rn);
+var gray = getElement(doc, '.gray'+rn);
+//var graySmall = getElement(doc, '.gray-small'+rn);
+var clicker =doc.querySelectorAll('.clicker'+rn);
+var infoCap = getElement(doc, '.info-cap'+rn);
+var infoWrapp = getElement(doc, '.info-wrapp'+rn);
+var infoClose = getElement(doc, '.info-close'+rn);
+var off = getElement(doc, '.off'+rn);
+var on = getElement(doc, '.on'+rn);
+var vidInner = getElement(doc, '.vid-inner'+rn);
+var panLearn = getElement(doc, '.pan-learn-more'+rn);
+
+
+setTimeout(function(){
+driver.style.transform = 'translateY(-100%)'; 
+getGa2('Base Unit', 'Expand', '');
+getGa2('Base Unit', 'Impression', ''); 
+}, 1000);
+
+
+off.addEventListener('click', function(){
+   driver.style.transform = 'translateY(0)';
+   for (var i = 0; i < btns.length; i++) {
+     panDwn(getElement(doc, '.panel'+i+rn), i);
+   };
+   if(activePan > -1){
+    getGa2(panName[activePan], 'Collapse', '');
+    getGa2(panName[activePan], 'Expand Time', '', timeSpentEnd(panName[activePan]));
+   }
+   activePan = -1;
+   getGa2('Base Unit', 'Collapse', '');
+   //city.style.transform = 'translateX(-50%) translateY(0)';
+})
+
+on.addEventListener('click', function(){
+   driver.style.transform = 'translateY(-100%)';
+   getGa2('Base Unit', 'Re-Expand', '');
+});
+
+
+driver.addEventListener('mouseenter', function(){
+  timeSpentStart('basehover');
+});
+
+driver.addEventListener('mouseleave', function(){
+  getGa2('Base Unit', 'Hover Time', '', timeSpentEnd('basehover'));
+});
+
+var panUp = function(pan, sel){
+
+  var frm = pan.querySelector('.framehug'+rn+' .iframe0'+rn);
+  //loadPlayer();
+  //console.log(pages[sel]);
+  frm.setAttribute('src', pages[sel]);
+  pixelFire('img', doc.body, ic_trackers[display+'_Collapsed_LearnMoreCTA_Impression']);
+  infoWrapp.classList.add('hide'+rn);
+  var wh = win.innerHeight - box.offsetHeight;
+  var mh = pan.dataset.mh;
+  if(mh && mh < wh) wh = mh;
+  pan.style.zIndex = '5';
+  pan.style.height = (wh-20)+'px';
+  pan.style.transition = 'all .3s ease-in-out';
+  pan.style.transform = 'translateY(-'+wh+'px) translateX(-50%)';
+
+  gray.style.height = win.innerHeight+'px';
+  gray.style.transform = 'translateY(calc(-100% + '+(box.offsetHeight-10)+'px))';
+  //graySmall.style.height = '100%';
+   pixelFire('img', doc.body, ic_trackers[display+'_Collapsed_LearnMoreCTA_Impression']);
+  var panbtn = getElement(doc, '.btn'+sel+rn+' .panbtn'+rn);
+  //panbtn.style.background = '#fff';
+
+  activePan = sel;
+  getGa2(panName[sel], 'Expand', '');
+  timeSpentStart(panName[sel]);
+  setTimeout(function(){
+    //doc.body.style.overflow = 'hidden';
+  }, 300);
+
+
+}
+
+
+
+var panDwn = function(pan, sel){
+  //doc.body.style.overflow = 'visible';
+  pan.style.zIndex = '0';
+  pan.style.height = '40px';
+  pan.style.transition = 'all .3s ease-in-out';
+  pan.style.transform = 'translateY(0px) translateX(-50%)';
+
+  gray.style.height = '40px';
+  gray.style.transform = 'translateY(0)';
+  //graySmall.style.height = '0';
+  setTimeout(function(){pan.querySelector('.framehug'+rn+' .iframe0'+rn).setAttribute('src', '')}, 400);
+    //if(playerExist){
+      //setTimeout(function(){myPlayer.unloadVideo();}, 250);
+    //}
+    
+  
+  
+ 
+  var panbtn = getElement(doc, '.btn'+sel+rn+' .panbtn'+rn);
+  //var tx = getElement(panbtn, '.txt'+rn);
+  //tx.style.backgroundColor = '#f6c032';	
+
+}
+
+
+
+for (var i = 0; i < clicker.length; i++) {
+  clicker[i].addEventListener('click', function(e){
+    //pixelFire(doc.body, 'https://beacon.krxd.net/event.gif?event_id=Mw9c8WYL&event_type=default&Base_Unit_Click=iShares_Custom_Unit');
+    var data_ga = this.dataset.ga.split('*');
+      getGa2(data_ga[0], data_ga[1], data_ga[2]);
+  });
+}
+
+
+for (var i = 0; i < btns.length; i++) {
+
+  panOff[i].addEventListener('click', function(){
+    var sel = this.dataset.sel;
+    var pan = getElement(doc, '.panel'+sel+rn);
+    panDwn(pan, sel);
+    getGa2(panName[sel], 'Collapse', '');
+    getGa2(panName[sel], 'Expand Time', '', timeSpentEnd(panName[sel]));
+    activePan = -1;
+  });
+
+  btns[i].addEventListener('click', function(){
+    var sel = this.dataset.sel;
+    var pan = getElement(doc, '.panel'+sel+rn);
+    var ph = pan.offsetHeight;
+    if(ph < 50) {
+      if(activePan > -1){
+        getGa2(panName[activePan], 'Collapse', '');
+        getGa2(panName[activePan], 'Expand Time', '', timeSpentEnd(panName[activePan]));
+      }
+      panUp(pan, sel);
+      for (var j = 0; j < btns.length; j++) {
+        if(j != sel){
+          panDwn(getElement(doc, '.panel'+j+rn), j);
+          //var tx = getElement(btns[j], '.txt'+rn);
+          //tx.style.backgroundColor = '#f6c032';
+        }
+      };
+    }else{
+      panDwn(pan, sel);
+      getGa2(panName[sel], 'Collapse', '');
+      getGa2(panName[sel], 'Expand Time', '', timeSpentEnd(panName[sel]));
+      activePan = -1;
+    }
+
+  });
+
+  gray.addEventListener('click', function(){
+    for (var i = 0; i < btns.length; i++) {
+      panDwn(getElement(doc, '.panel'+i+rn), i);
+    };
+    if(activePan > -1){
+     getGa2(panName[activePan], 'Collapse', '');
+     getGa2(panName[activePan], 'Expand Time', '', timeSpentEnd(panName[activePan]));
+    }
+    activePan = -1;
+  });
+
+  btns[i].addEventListener('mouseenter', function(){
+      var panbtn = getElement(this, '.panbtn'+rn);
+      var sel = this.dataset.sel;
+      if(sel != activePan){
+        //var tx = getElement(panbtn, '.txt'+rn);
+        //tx.style.backgroundColor = '#f8db8d';
+      }
+  });
+
+  btns[i].addEventListener('mouseleave', function(){
+  	 var panbtn = getElement(this, '.panbtn'+rn);
+  	 var sel = this.dataset.sel;
+  	 if(sel != activePan){
+      //var tx = getElement(panbtn, '.txt'+rn);
+      //tx.style.backgroundColor = '#f6c032';	
+  	 }
+  });
+}
+
+infoCap.addEventListener('click', function(){
+  infoWrapp.classList.remove('hide'+rn);
+  myPlayer.pauseVideo();
+
+});
+infoClose.addEventListener('click', function(){
+  infoWrapp.classList.add('hide'+rn);
+});
+
+panLearn.addEventListener('click', function(){
+  myPlayer.pauseVideo();
+});
+
+var pixelFire = function(typ, app, srr){
+  var m = document.createElement(typ);
+  m.src = srr;
+  m.style.cssText = "width:1px;height:1px;position:absolute;top:-9999;display:none;";
+  app.appendChild(m);
+}
+
+win.addEventListener('resize', function(){
+  console.log(activePan);
+  if(activePan > -1){
+    var ratio = 16/9;
+    var pan = getElement(doc, '.panel'+activePan+rn);
+    var ph = pan.offsetHeight;
+    var wh = this.innerHeight - box.offsetHeight;
+    var mh = pan.dataset.mh;
+    gray.style.height = win.innerHeight+'px';
+    if(mh > wh){
+      pan.style.height = (wh-20)+'px';
+      pan.style.transition = 'all 0s ease-in-out';
+      pan.style.transform = 'translateY(-'+wh+'px) translateX(-50%)';
+      if(activePan == 1) pan.style.width = (ratio*ph)+'px';
+    }
+  }
+});
+
+win.addEventListener("beforeunload",function() {
+  if(activePan > -1){ 
+    getGa2(panName[activePan], 'Collapse', '');
+    getGa2(panName[activePan], 'Expand Time', '', timeSpentEnd(panName[activePan]));
+  }
+});
+
+if(hostname == 'stockanalysis.com'){
+  frameElement.contentWindow.addEventListener('unload',function(){
+    try {foot.parentNode.removeChild(foot);}catch(err) {}
+  });
+}
+
+var myPlayer;
+var playerExist;
+function loadPlayer(){
+ if(!playerExist){
+    var s = document.createElement('script');
+    s.onload = function(){
+        playerExist = true;
+        myPlayer = new icPlayer(vidInner);
+        myPlayer.setup({
+            autoplay: true, //*
+            muted: false,  //*
+            ga: {trackerName: gaName, propertyId: gaId, dfp: '|'+lineItemId+'|'+adUnitId+'|'+advertId},
+            source: videoSrc,
+            poster: posterSrc,
+            clickout: ic_trackers[display+'_Expanded_Clicks']
+            
+        });
+        setTimeout(function(){myPlayer.videoContainer.style.background = "transparent"}, 1000);
+    }
+    s.src = 'https://iclnd.investingchannel.com/icplayer/v3/ic-player.js';
+    document.body.appendChild(s);
+ }else{
+
+   console.log('fafaf')
+    myPlayer.loadVideo({
+    source: videoSrc,
+    poster: posterSrc
+    });
+
+ }
+}
+
+pixelFire('img', doc.body, ic_trackers[display+'_Collapsed_Impression']);
+
+//pixelFire('img', doc.body, ic_trackers[display+'_Double_Verify']);
+//pixelFire('img', doc.body, ic_trackers[display+'_Kantar']);
+//pixelFire('img', doc.body, ic_trackers[display+'_Dynata']);
+
+pixelFire('script', doc.body, ic_trackers[display+'_MOAT']);
+
+pixelFire('img', doc.body, view_macro);
+
+})()
+
