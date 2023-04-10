@@ -1,0 +1,76 @@
+
+<!-- saved from url=(0042)https://u5.investingchannel.com/icuid.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+	<div id="myValue"></div>
+
+	<script type="text/javascript">
+		var cookieSupported = false;
+	 	if (window.parent) {
+			if (/thirdparty=yes/.test(document.cookie)) {
+				//window.parent.postMessage('IC:3PCsupported', '*');
+				cookieSupported = true;
+			} else {
+				//window.parent.postMessage('IC:3PCunsupported', '*');
+				cookieSupported = false;
+			}
+			document.cookie = 'thirdparty=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+		}
+	 	
+		if (typeof window.addEventListener != 'undefined') {
+	        window.addEventListener('message', function(e){
+	            if(e.data == "getUid"){
+	            	postUid();
+	            }
+	        }, false);
+	    } else if (typeof window.attachEvent != 'undefined') { // this part is for IE8
+	        window.attachEvent('onmessage', function(e){
+				if(e.data == "getUid"){
+	        		postUid();    	
+	            }
+	        });
+	    }
+
+		function uuidv4() {
+		  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+		    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+		    return v.toString(16);
+		  });
+		}
+	
+		function postUid(){
+			var keyName = "ICUID";
+			var keyValue = "";
+			try{
+				if(typeof Storage !== "undefined" && cookieSupported){
+					if(localStorage.getItem(keyName) === null){
+						//Reading ic_uid cookie and seting the value.
+						var cookieValue = getCookie("ic_uid");
+						console.log("ic_uid Cookie Value: "+ getCookie("ic_uid"));
+						if(cookieValue && cookieValue !== null){
+							localStorage.setItem(keyName, cookieValue);
+						} else {
+							localStorage.setItem(keyName, uuidv4());
+						}
+					}
+					
+					keyValue = localStorage.getItem(keyName);
+				}
+			} catch(e){
+			}
+			
+			window.parent.postMessage("icuid="+keyValue, '*');
+		}
+		// returns the cookie with the given name,
+		// or undefined if not found
+		function getCookie(name) {
+		  let matches = document.cookie.match(new RegExp(
+		    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+		  ));
+		  return matches ? decodeURIComponent(matches[1]) : undefined;
+		}
+	</script>
+
+</body></html>

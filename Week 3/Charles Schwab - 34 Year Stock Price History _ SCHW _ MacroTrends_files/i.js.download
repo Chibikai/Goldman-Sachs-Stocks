@@ -1,0 +1,55 @@
+(function() { function bxBootstrap() {
+	var re = /bot|crawl|slurp|spider|mediapartners|headlesschrome|snap-prefetch|remotasks|woorank|uptime\.com|facebookexternalhit|facebookcatalog/i;
+	if (re.test(navigator.userAgent) || navigator.userAgent == '') {
+		return;
+	}
+
+	if (!(window.bouncex&&bouncex.website)) {
+		var pushedData = [];
+		if(window.bouncex && bouncex.push && bouncex.length){
+			pushedData = bouncex;
+		}
+		window.bouncex = {};
+		bouncex.pushedData = pushedData;
+		bouncex.website = {"id":1976,"name":"Investing Channel | Investing Channel","cookie_name":"bounceClientVisit1976","domain":"investingchannel.com","ct":"bind_to_domain","ally":0,"ei":0,"tcjs":"","cjs":"// (function() {\n//     // SSM 08/16/18 0:20:14 PM  https://www.wrike.com/open.htm?id=262056569\n//     if (bouncex.website.gbi_enabled) {\n//         clearInterval(bouncex.testInterval);\n//         bouncex.testInterval = setInterval(function(){\n            \n//             if (bouncex.vars.pbb_response === false) {\n//                 if (window.bxgraph && bxgraph.IDs && bxgraph.IDs.deviceID) {\n                    \n//                     clearInterval(bouncex.testInterval);\n                    \n//                     jQuery.ajax({\n//                       url: \"https://pbb.bouncex.net/bxid/\" + bxgraph.IDs.deviceID,\n//                       data: {\"website\":'+bouncex.website.id+'},\n//                       success: function(e) {\n//                         var elig = bouncex.parseJSON(e, {eligibility:\"\"}).eligibility || \"not\";\n//                         bouncex.setVarAndReload('pbb_response', elig);\n//                       }\n//                     });\n//                 }\n//             } else {\n//                 clearInterval(bouncex.testInterval);\n//             }\n//         }, 200);\n        \n//     } else {\n//         bouncex.setVarAndReload('pbb_response', 'not');\n//     }\n// })();","force_https":false,"waypoints":false,"content_width":900,"gai":"","swids":"","sd":0,"ljq":"auto","campaign_id":0,"is_preview":false,"aco":{"first_party_limit":"3500","local_storage":"1"},"cmp":{"gdpr":1,"gmp":0,"whitelist_check":0},"burls":[],"ple":false,"fbe":true,"mas":0,"map":1,"gar":true,"ete":0,"ettm":true,"etjs":"","dge":true,"bxidLoadFirst":false,"pie":true,"cme":false,"gbi_enabled":1,"bpush":false,"pt":null,"els":null,"vars":[{"name":"site_section","polling":"none","persist":"no","page_types":[],"testmode":false,"default":"false","code":"jQuery('.menu li.current').text().trim().toLowerCase();","trigger":""},{"name":"kval","polling":"none","persist":"no","page_types":[],"testmode":false,"default":"false","code":"(function() {\n    var targetUrlParam = 'kval=';\n    var $scripts = jQuery('script[src*=\"'+targetUrlParam+'\"]');\n    var src = decodeURIComponent($scripts.eq(0).attr('src'));\n    var regex = new RegExp(targetUrlParam+'([^&]*)');\n    var matches = src.match(regex);\n    if (src !== 'undefined' && matches && matches.length > 1) {\n        return decodeURIComponent(matches[1]);\n    } else {\n        return '';\n    }\n})()","trigger":""},{"name":"stocktwits_logged_in","polling":"all","persist":"no","page_types":[],"testmode":false,"default":"false","code":"(function(){\n  if (window.USER_INFO && !USER_INFO.id) {\n    return false;\n  }\n  var $desktopLogin = jQuery('[role=navigation]:contains(Log In)');\n  var $tabletLogin = jQuery('[role=navigation]:contains(Sign Up)');\n  var $mobileReg = jQuery('.RegisterForm__form___3XjaH');\n  \n  return $desktopLogin.length < 1 && $tabletLogin.length < 1 && $mobileReg.length < 1;\n})();","trigger":""},{"name":"logged_in","polling":"none","persist":"visit","page_types":[],"testmode":false,"default":"false","code":"(function(){\n  return false;\n})();","trigger":""},{"name":"is_article","polling":"none","persist":"no","page_types":[],"testmode":false,"default":"false","code":"jQuery('.content.blog-page.article-page').length > 0;","trigger":""},{"name":"bx_suppress","polling":"all","persist":"no","page_types":[],"testmode":false,"default":"false","code":"(function() {\n    /* https://www.wrike.com/open.htm?id=133365321 */\n    if (window.googletag && googletag.apiReady && googletag.pubadsReady) {\n        if (window.bouncex.apiChecks >= 10) {\n            return null;\n        } else {\n            if (window.bouncex.apiChecks === undefined) {\n                window.bouncex.apiChecks = 1;\n            } else {\n                window.bouncex.apiChecks++;\n            }\n            var apiSlots = googletag.pubads().getSlots();\n            var numSlots = apiSlots.length;\n            for (var i = 0; i < numSlots; i++ ){\n                var slot = apiSlots[i];\n                var sizeInfo = slot.j;\n                if (!sizeInfo) { return true; }\n                var width = sizeInfo._width_;\n                var height = sizeInfo._height_;\n                var empty = sizeInfo._empty_;\n                if (width === undefined && height === undefined && empty === undefined) {\n                    return true;\n                }\n                if (width == 1 && height == 1 && empty === false) {\n                    return true;\n                }\n            }\n            return false;\n        }\n    } else {\n        return 'not_ready';\n    }\n})()","trigger":""},{"name":"dfp_rblock","polling":"all","persist":"no","page_types":[],"testmode":false,"default":"false","code":"(function() {\n    function check() {\n        bouncex.dfp_loaded = false || bouncex.dfp_loaded;\n        var slots = window.googletag && typeof googletag.pubads == 'function' && typeof googletag.pubads().getSlots == 'function'? googletag.pubads().getSlots() : [];\n        var numSlots = slots.length;\n        for (var i = 0; i < numSlots; i++) {\n            var slotInfo = slots[i] && typeof slots[i].getResponseInformation == 'function'? slots[i].getResponseInformation() : false;\n            if (slotInfo && slotInfo.lineItemId) {\n                bouncex.dfp_loaded = true;\n                if (bouncex.website.gbi.rblocks && bouncex.website.gbi.rblocks.indexOf(slotInfo.lineItemId) > -1) {\n                    return 'sponsor';\n                }\n            }\n        }\n        if (bouncex.dfp_loaded) {\n            return 'allow';\n        }\n        return 'not_ready';\n    }\n    if (bouncex.website.gbi.rblocks) {\n        if (!bouncex.website.gbi_enabled) {\n            return 'disabled';\n        } else if (bouncex.dfp_loaded) {\n            return null;\n        } else if (window.googletag && googletag.apiReady && googletag.pubadsReady) {\n            return check();\n        }\n        return 'fallback';\n    } else {\n        return 'not_ready';\n    }\n})()","trigger":""},{"name":"pbb_response","polling":"none","persist":"no","page_types":[],"testmode":false,"default":"false","code":"null;","trigger":"pageload"}],"dgu":"pixel.cdnwidget.com","dgp":false,"ba":{"enabled":0,"fbte":0},"biu":"assets.bounceexchange.com","bau":"api.bounceexchange.com","beu":"events.bouncex.net","ibx":{"tjs":"","cjs":"","miw":0,"mibcx":0,"te":0,"cart_rep":{"get":"","set":""},"ulpj":null,"cus":"","miw_exclude":"","enabled":0},"etjson":null,"osre":false,"osru":"osr.bounceexchange.com/v1/osr/items","checkDfp":true,"gamNetwork":"5206","spa":0,"spatm":1,"preinit_cjs":"","crs":{"integrations":null,"pageCount":null},"mat":0,"math":0,"cpnu":"coupons.bounceexchange.com","dfpcms":0,"sms":{"optm":"","eventSharing":false,"shqId":"","enabled":0},"pde":true,"fme":false,"fmx":"","sdk":{"android":{"enabled":false,"enabledVersions":[],"eventModifications":null},"ios":{"enabled":false,"enabledVersions":[],"eventModifications":null}},"onsite":{"enabled":1},"ads":{"enabled":1},"pubs":{"enabled":1},"ga4_property_id":"","ga4_measurement_id":""}
+;
+		bouncex.tag = 'tag3';
+		bouncex.$ = window.jQuery;
+		bouncex.env = 'production';
+		bouncex.restrictedTlds = {"casl":{"ca":1},"gdpr":{"ad":1,"al":1,"at":1,"ax":1,"ba":1,"be":1,"bg":1,"by":1,"xn--90ais":1,"ch":1,"cy":1,"cz":1,"de":1,"dk":1,"ee":1,"es":1,"eu":1,"fi":1,"fo":1,"fr":1,"uk":1,"gb":1,"gg":1,"gi":1,"gr":1,"hr":1,"hu":1,"ie":1,"im":1,"is":1,"it":1,"je":1,"li":1,"lt":1,"lu":1,"lv":1,"mc":1,"md":1,"me":1,"mk":1,"xn--d1al":1,"mt":1,"nl":1,"no":1,"pl":1,"pt":1,"ro":1,"rs":1,"xn--90a3ac":1,"ru":1,"su":1,"xn--p1ai":1,"se":1,"si":1,"sj":1,"sk":1,"sm":1,"ua":1,"xn--j1amh":1,"va":1,"tr":1}};
+		bouncex.client = {
+			supportsBrotli: 1
+		};
+		bouncex.assets = {"ads":"f502811386e09c708756fe0ff35dad81","creativesBaseStyles":"a53944a2","gam_5206":"//assets.bounceexchange.com/assets/gam/5206/ae811dd04e417ed7b896b4c4fa3d2ac0.json","inbox":"1f1650b71f3eef0016a17d90fcebc5b6","onsite":"75754f63a2f28a62e880f8c3a9b67a8e","sms":"83c459de98ee1e8fb4095b274936326b"};
+		bouncex.push = function(pushData) {
+			bouncex.pushedData.push(pushData);
+		}
+
+
+		var script = document.createElement('script');
+		script.setAttribute('src', '//assets.bounceexchange.com/assets/smart-tag/versioned/main_b3b6fea5cf0dfea39273e239b021a98a.br.js');
+		script.setAttribute('async', 'async');
+		document.body.appendChild(script);
+
+	}
+
+
+	var deviceGraphScript = document.createElement('script');
+	deviceGraphScript.setAttribute('src', '//assets.bounceexchange.com/assets/smart-tag/versioned/cjs_min_24671f84c10903890805106089f4e82c.js');
+	deviceGraphScript.setAttribute('async', 'async');
+	var dgAttrs = [{"Key":"id","Value":"c.js"},{"Key":"async","Value":"true"},{"Key":"data-apikey","Value":"2^HIykD"},{"Key":"data-cb","Value":"bouncex.dg.initPostDeviceGraph"},{"Key":"data-bx","Value":"1"},{"Key":"data-fire","Value":"1"},{"Key":"data-adcb","Value":"bouncex.dg.getAdsOptStatus"}];
+	if (dgAttrs) {
+		for (var i = 0; i < dgAttrs.length; i++) {
+			deviceGraphScript.setAttribute(dgAttrs[i].Key, dgAttrs[i].Value);
+		}
+	}
+	document.body.appendChild(deviceGraphScript);
+
+
+}
+
+if (document.readyState === "loading") {
+	document.addEventListener("DOMContentLoaded", bxBootstrap);
+} else {
+	bxBootstrap();
+}})();

@@ -1,0 +1,1754 @@
+var nboost = nboost || {};
+var nameSpace = nboost || {};
+var productType, _productType;
+
+(function () {
+	"use strict";
+
+	///////////////
+	// VARIABLES //
+	///////////////
+
+// VAR - CONTROL
+var timeline;
+var wrapper;
+var clickThrough; 
+var width, height;
+var _clickTAG_url;
+var _dev
+var _goal;
+var _context;
+var _Audience;
+var _CreativeDimension;
+var _DeviceType;
+var _city;
+var _product;
+
+
+// VAR - IMAGE
+var _product1, _product1_illustration, _f1_leaf, _product2, _f2_leaf1, _f2_leaf2, _f2_leaf3, _copyRight;
+var _logo, _ctaBg, _bg_color;
+
+// VAR - COPY
+var _f1_copy, _f1_copyStyle;
+var _f2_copy1, _f2_copy1Style;
+var _f2_copy2, _f2_copy2Style;
+var _f2_copy3, _f2_copy3Style;
+var _f2_productTnc, _f2_productTncStyle;
+var _cta_copy, _cta, _additionalCopy;
+
+
+	// VAR - TRIGGER
+	var _triggerSet1, _triggerSet2;
+	var _temp;
+	var _date 		= new Date();
+	var _month      = _date.getMonth();
+	var _hour 		= _date.getHours();
+
+  // VAR - REPORTING
+  var _uid;
+  var _reportTrigger;
+  var _reportCta;
+
+
+	nameSpace.init = function () {
+		// DIMENSION
+		width 				= 728;
+		height 				= 90;
+
+		// DEFAULT DOM
+
+    
+		clickThrough 		= document.getElementById('click_through');
+
+    // SUB PROCESSES
+    nameSpace.IDsToVars();
+    nameSpace.loadDynamicContent();
+    nameSpace.loadImages();
+    nameSpace.triggerCheckCopy();
+    nameSpace.triggerCheckCta();
+    nameSpace.initClickTag();
+    nameSpace.insertElementsToDom();
+    nameSpace.startAnimation();
+    nameSpace.productwiseAlignmentFixes();
+   // nameSpace.loadNa();
+     
+  };
+  
+
+
+
+
+  nameSpace.loadDynamicContent = function () {
+    
+   
+// Dynamic Content variables and sample values
+    Enabler.setProfileId(10591158);
+    var devDynamicContent = {};
+
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed = [{}];
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0]._id = 0;
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Unique_ID = 1000001;
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Reporting_label = "A BR GMN\/ANew York, NY300x600";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].isActive = true;
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].isDefault = false;
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].startDate = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].startDate.RawValue = "12/1/2022";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].startDate.UtcValue = 1669852800000;
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Enddate = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Enddate.RawValue = "1/2/2024";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Enddate.UtcValue = 1704153600000;
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Goal = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Audience = "A BR GM";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Context = "N\/A";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Trigger = "New York, NY";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Device_type = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].City = "New York, NY";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].ImageryCityName = "New York City";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].product_type = "cityNew";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].bg_color = "#7dc242";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].logo = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].logo.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].logo.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20201230063321844_logo2.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_product_Img = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_product_Img.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_product_Img.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20210128245214400_Tulip.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_product_illustration_img = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_product_illustration_img.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_product_illustration_img.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20210128245044149_NY.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_leaf = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_leaf.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_leaf.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20201230063222133_city_f1_leaf.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_copy = "NYC, stay on top of allergies.";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_copy_style = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy = "Works fast* and stays strong day after day.";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_product_img = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_product_img.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_product_img.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20221213215833295_city_product-2-new.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l1 = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l1.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l1.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20221212093546886_f2_leaf1-new.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l2 = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l2.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l2.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20221212093552229_f2_leaf2-new.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l3 = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l3.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l3.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20221212093557556_f2_leaf3-new.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy1 = "Works fast*";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy1_style = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy2 = "<span id=\"f2_copy2_span\" class=\"text-right\">and<\/span> stays strong";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy2_style = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy3 = "day after day.";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy3_style = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].terms_condition = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_below_copy = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_copy = "BUY NOW";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_bg = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_bg.Type = "file";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_bg.Url = "https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20221213231600520_red_cta-bg.png";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_url = {};
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_url.Url = "https://www.zyrtec.com/products/zyrtec-tablets?utm_medium=display-static&utm_source=matterkind&utm_campaign=23-matterkind-zyrtec-adult-sneezetrigger";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].flight_date = "";
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].dev = true;
+    devDynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Message_Territory = "";
+    Enabler.setDevDynamicContent(devDynamicContent);
+
+
+    _uid       = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Unique_ID;
+    _dev        = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].dev;
+  _clickTAG_url = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_url.Url;
+    productType = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].product_type;
+    _goal   = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Goal;
+    _Audience = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Audience;
+    _context = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Context;
+    _CreativeDimension = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].CreativeDimension;
+    _product = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Product;
+    _city = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].City;
+    _DeviceType = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Device_type;
+    console.log(productType);  
+  };
+
+	nameSpace.triggerCheckCta = function () {
+    //_clickTAG_url	= dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_url;
+	};
+
+	nameSpace.initClickTag = function () {
+    // custom impression reporting
+    nameSpace.sendCustomReportingVariable();
+		clickThrough.onclick = function () {
+      // custom click reporting
+      nameSpace.sendCustomClickVariable();
+			Enabler.exitOverride("Background Exit", _clickTAG_url);
+		};
+  };
+
+      ///////////////
+  // REPORTING //
+  ///////////////
+
+  // BUILD & FIRE CUSTOM IMPRESSION VARIABLE
+  nameSpace.sendCustomReportingVariable = function() {
+    var _report = _uid + "_IMP_"+_reportTrigger;
+    Enabler.reportCustomVariableCount1(_report);
+    console.log("CUSTOM VARIABLE (IMPRESSION) : " + _report);
+}
+
+// BUILD & FIRE CUSTOM CLICK VARIABLE
+nameSpace.sendCustomClickVariable = function() {
+    var _report = _uid + "_CLK_"+_reportTrigger;
+    Enabler.reportCustomVariableCount2(_report);
+    console.log("CUSTOM VARIABLE (CLICK) : " + _report);
+}
+  
+  nameSpace.loadImages = function () {
+
+    _logo     = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].logo.Url;
+    _cta     = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_bg.Url;
+    _bg_color     = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].bg_color;
+  };
+
+
+  nameSpace.triggerCheckCopy = function () {
+    loadNa();
+};
+
+
+  function loadNa () {
+    _f1_copy   = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_copy;
+    _product1   = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_product_Img.Url;
+    _product1_illustration   = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_product_illustration_img.Url;
+    _f1_leaf   = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_leaf.Url;
+    _f1_copyStyle = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame1_copy_style;
+    
+    _product2    = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_product_img.Url;
+    _f2_leaf1   = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l1.Url;
+   // _f2_leaf2   = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l2.Url;
+    //_f2_leaf3   = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_l3.Url;
+
+      _f2_copy1    = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy1;
+      _f2_copy1Style = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy1_style;
+      _f2_copy2    = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy2;
+     // _f2_copy3    = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].frame2_copy3;
+      _f2_productTnc    = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].terms_condition;
+      _cta_copy    = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_copy;
+      _clickTAG_url = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_url.Url;
+      _cta      = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_url;
+      _ctaBg    = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_bg.Url;
+
+      _additionalCopy    = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].cta_below_copy;
+
+
+    _reportTrigger  = dynamicContent.Zyrtec_Sneeze_Trigger_2023_masterfeed[0].Trigger;
+    // _ProductName = dynamicContent.NTG_Megabrand_master_feed[0].Product;
+  };
+
+
+  
+
+  nameSpace.insertElementsToDom = function () {
+    nameSpace.insertImage(product1,    _product1,     false);
+    nameSpace.insertImage(product1_illustration,    _product1_illustration,     false);
+    nameSpace.insertImage(f1_leaf,    _f1_leaf,     false);
+    nameSpace.insertImage(logo,     _logo,      false);
+    nameSpace.insertImage(product2,    _product2,     false);
+    nameSpace.insertImage(f2_leaf1,    _f2_leaf1,     false);
+    //nameSpace.insertImage(f2_leaf2,    _f2_leaf2,     false);
+    //nameSpace.insertImage(f2_leaf3,    _f2_leaf3,     false);
+    //nameSpace.insertImage(copyRight,    _copyRight,     false);
+    nameSpace.insertImage(cta,    _ctaBg,     true);
+    
+    nameSpace.insertImage(mainContainer,   _bg_color,   "bgColor");
+
+    nameSpace.insertCopy(f1_copy,     _f1_copy, _f1_copyStyle);
+    nameSpace.insertCopy(f2_copy1,     _f2_copy1, _f2_copy1Style);
+    nameSpace.insertCopy(f2_copy2,     _f2_copy2, _f2_copy2Style);
+    //nameSpace.insertCopy(f2_copy3,     _f2_copy3,);
+    nameSpace.insertCopy(f2_productTnc,     _f2_productTnc,);
+    nameSpace.insertCopy(additionalCopy,     _additionalCopy,);
+    nameSpace.insertCopy(cta,   _cta_copy,);
+
+    //reporting
+    nameSpace.displayReport();
+    
+  };
+
+  nameSpace.insertCopy = function (_target, _copy, _style) {
+
+    var style_obj = eval("({" + _style + "})");
+    var _c = _copy;
+
+    _target.innerHTML = _c;
+
+    for (var key in style_obj) {
+
+      if (key === 'posX') {
+        TweenMax.set(_target, { x: style_obj.posX });
+      }
+
+      if (key === 'posY') {
+        TweenMax.set(_target, { y: style_obj.posY });
+      }
+
+      if (key === 'fontSize') {
+        _target.style.fontSize = style_obj.fontSize + "px";
+      }
+
+      if (key === 'lineHeight') {
+
+        _target.style.lineHeight = style_obj.lineHeight + "px";
+      }
+
+      if (key === 'width') {
+        _target.style.width = style_obj.width + 'px';
+      }
+
+      if (key === 'height') {
+        _target.style.height = style_obj.height + 'px';
+      }
+
+      if (key === 'padTop') {
+        _target.style.paddingTop = style_obj.padTop + 'px';
+      }
+
+      if (key === 'letterSpacing') {
+        _target.style.letterSpacing = style_obj.letterSpacing + 'px';
+      }
+      if (key === 'left') {
+        _target.style.left = style_obj.left + 'px';
+      }
+      if (key === 'width') {
+        _target.style.width = style_obj.width + 'px';
+      }
+
+    }
+  };
+
+  nameSpace.insertImage = function (_target, _img, _isBackground) {
+    if (_isBackground === true) {
+      //_target.style.backgroundSize = 'contain';
+      _target.style.backgroundImage = "url('" + _img + "')";
+    }
+    else if (_isBackground === "bgColor" ) {
+      _target.style.backgroundColor = _img;
+    } 
+    else {
+      _target.innerHTML = '<img src="' + _img + '" />';
+    }
+  };
+
+  nameSpace.IDsToVars = function () {
+    var allElements = document.getElementsByTagName("*");
+
+    for (var q = 0; q < allElements.length; q++) {
+      var el = allElements[q];
+      if (el.id) {
+        window[el.id] = document.getElementById(el.id);
+        el.style.position = "absolute";
+      }
+    }
+  };
+
+//Animation
+nameSpace.productwiseAlignmentFixes = function (){
+  var cta = document.getElementById("cta");
+  if(productType == "cityNew"){
+    document.body.classList.add("cityNewCategory");
+    if(cta.textContent.includes('COMPRA')){
+      document.getElementById("f2_copy1").style.textAlign = "center";
+      
+    }
+  }
+    
+  if(productType == "cityNewOption2"){
+        document.body.classList.add("cityNewOption2Category");
+        if(cta.textContent.includes('COMPRA')){
+          document.getElementById("f2_copy1").style.textAlign = "center"; 
+          //document.getElementById("#f2_productTnc").style.bottom = "4px";       
+  }
+   }
+
+  if(productType == "peds"){
+   
+    document.body.classList.add("pedsCategory");
+    document.getElementById("f1_copy").style.width = "210px";
+    document.getElementById("f2_copy1").style.top = "6px";
+    // document.getElementById("f2_copy1").style.width = "334px";
+    document.getElementById("f2_copy1").style.left = "190px";
+    //document.getElementById("f2_copy1").style.fontSize = "25px";
+    //document.getElementById("f2_copy1").style.lineHeight = "23px";
+    document.getElementById("cta").style.fontSize = "20px";
+    document.getElementById("cta").style.top = "22px";
+    document.getElementById("cta").style.width = "105px";
+    document.getElementById("cta").style.height = "40px";
+    document.getElementById("cta").style.lineHeight = "40px";
+    document.getElementById("cta").style.right = "44px";
+
+
+    document.getElementById("wrapper").addEventListener("mouseover", mouseOver);
+    document.getElementById("wrapper").addEventListener("mouseout", mouseOut);
+
+    function mouseOver() {
+      document.getElementById("cta").style.backgroundPosition = "0px -60px";
+    }
+
+    function mouseOut() {
+      document.getElementById("cta").style.backgroundPosition = "0px 0px";
+    }
+
+  }
+
+  if(productType == "pedsNew"){
+    document.body.classList.add("pedsNewCategory");
+    document.getElementById("wrapper").addEventListener("mouseover", mouseOver);
+    document.getElementById("wrapper").addEventListener("mouseout", mouseOut);
+    function mouseOver() {
+      document.getElementById("cta").style.backgroundPosition = "0px -60px";
+    }
+
+    function mouseOut() {
+      document.getElementById("cta").style.backgroundPosition = "0px 0px";
+    }
+
+  }
+
+}
+
+nameSpace.startAnimation = function () {
+
+var tl = gsap.timeline();
+
+if(productType == "city"){
+
+tl.fromTo("#wrapper", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1
+  }, "0.5")
+  .fromTo("#click_through", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1
+  }, "0.5")
+  
+  .fromTo("#product1", 0.5, {
+    x:728,
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    x:0,
+    opacity: 1,
+  }, "1")
+
+  .to("#product1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4")
+  
+  .fromTo("#product1_illustration", 0.5, {
+    y:90,
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1,
+    y: 0
+  }, "1")
+
+  .to("#product1_illustration", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4.5")
+
+   .fromTo("#product2", 0.5, {
+    y:90,
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1,
+    y: -55,
+  }, "4.1")
+
+  
+
+
+
+
+ 
+
+ 
+
+  .fromTo("#f1_leaf", 0.8, {
+    rotation: -90,
+    ease: "expo.out"
+  },
+  {   rotation:0,
+      opacity: 1,
+  }, "0.5")
+  
+  .to("#f1_leaf", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  }, "3.8") 
+  
+  .fromTo("#f1_copy", 0.8, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "1")
+  
+  .to("#f1_copy", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "3.8") 
+
+
+  .fromTo("#frame1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "0.5")
+
+  .to("#frame1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4.2") 
+
+  .fromTo("#animation_container", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "0.5")
+
+  .to("#animation_container", 0.5, {
+    opacity:0,
+    autoAlpha:0,
+    ease: "expo.out"
+  }, "4.1") 
+
+
+
+
+  .fromTo("#frame2", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.1")
+  
+  /* Not used in 728x90
+
+  .fromTo("#f2_leaf1", 0.5, {
+   
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {  
+      opacity: 1,
+      scale:1,
+  }, "4.4")
+
+  .fromTo("#f2_leaf2", 0.5, {
+
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {  
+      scale:1,
+      opacity: 1,
+  }, "4.6")
+
+
+  .fromTo("#f2_leaf3", 0.5, {
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {   
+      opacity: 1,
+      scale:1,
+  }, "4.8")
+  
+  */
+ 
+
+  
+
+ 
+
+  .fromTo("#f2_copy1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.8")
+  
+ 
+
+  /* Not used in 728x90 
+
+  .fromTo("#f2_copy2", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.8")
+
+  .fromTo("#f2_copy3", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.8")
+
+  */ 
+  
+  .fromTo("#f2_productTnc", 0.8, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "5.2")
+
+
+  
+
+  .fromTo("#cta", 0.2, {
+    opacity:0,
+    scale: 0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1,
+    scale:1,
+    ease: "power1.out"
+  }, "5")
+
+  .fromTo("#copyRight", 0.2, {
+    opacity:0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1, 
+    ease: "power1.out"
+  }, "5.2")
+
+  .fromTo("#logo", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1, 
+    ease: "power1.out"
+  }, "1.5")
+
+  .to("#logo", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4") 
+
+} 
+
+if(productType == "cityNew"){
+
+  tl.fromTo("#wrapper", 0.5, {
+      opacity: 0,
+      ease: "expo.out"
+    },
+    {
+      opacity: 1
+    }, "0.5")
+    .fromTo("#click_through", 0.5, {
+      opacity: 0,
+      ease: "expo.out"
+    },
+    {
+      opacity: 1
+    }, "0.5")
+    
+    .fromTo("#product1", 0.5, {
+      x:728,
+      opacity: 0,
+      ease: "expo.out"
+    },
+    {
+      x:0,
+      opacity: 1,
+    }, "1")
+  
+    .to("#product1", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    }, "4")
+    
+    .fromTo("#product1_illustration", 0.5, {
+      y:90,
+      opacity: 0,
+      ease: "expo.out"
+    },
+    {
+      opacity: 1,
+      y: 0
+    }, "1")
+  
+    .to("#product1_illustration", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    }, "4.5")
+  
+     .fromTo("#product2", 0.5, {
+      y:90,
+      opacity: 0,
+      ease: "expo.out"
+    },
+    {
+      opacity: 1,
+      y: -55,
+    }, "4.1")
+  
+  
+    .fromTo("#f1_leaf", 0.8, {
+      rotation: -90,
+      ease: "expo.out"
+    },
+    {   rotation:0,
+        opacity: 1,
+    }, "0.5")
+    
+    .to("#f1_leaf", 0.5, {
+      opacity: 0,
+      ease: "expo.out"
+    }, "3.8") 
+    
+    .fromTo("#f1_copy", 0.8, {
+      opacity:0,
+      ease: "expo.out"
+    },
+    {
+        opacity: 1,
+    }, "1")
+    
+    .to("#f1_copy", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    }, "3.8") 
+  
+  
+    .fromTo("#frame1", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    },
+    {
+        opacity: 1,
+    }, "0.5")
+  
+    .to("#frame1", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    }, "4.2") 
+  
+    .fromTo("#animation_container", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    },
+    {
+        opacity: 1,
+    }, "0.5")
+  
+    .to("#animation_container", 0.5, {
+      opacity:0,
+      autoAlpha:0,
+      ease: "expo.out"
+    }, "4.1") 
+  
+  
+  
+  
+    .fromTo("#frame2", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    },
+    {
+        opacity: 1,
+    }, "4.1")
+
+    .fromTo("#f2_leaf1", 0.5, {
+     
+      scale:0,
+      opacity:0,
+      ease: "expo.out"
+    },
+    {  
+        opacity: 1,
+        scale:1,
+    }, "4.4")
+    
+    /* Not used in 728x90
+  
+    .fromTo("#f2_leaf1", 0.5, {
+     
+      scale:0,
+      opacity:0,
+      ease: "expo.out"
+    },
+    {  
+        opacity: 1,
+        scale:1,
+    }, "4.4")
+  
+    .fromTo("#f2_leaf2", 0.5, {
+  
+      scale:0,
+      opacity:0,
+      ease: "expo.out"
+    },
+    {  
+        scale:1,
+        opacity: 1,
+    }, "4.6")
+  
+  
+    .fromTo("#f2_leaf3", 0.5, {
+      scale:0,
+      opacity:0,
+      ease: "expo.out"
+    },
+    {   
+        opacity: 1,
+        scale:1,
+    }, "4.8")
+    
+    */
+   
+  
+    
+  
+   
+  
+    .fromTo("#f2_copy1", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    },
+    {
+        opacity: 1,
+    }, "4.8")
+    
+   
+  
+    /* Not used in 728x90 
+  
+    .fromTo("#f2_copy2", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    },
+    {
+        opacity: 1,
+    }, "4.8")
+  
+    .fromTo("#f2_copy3", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    },
+    {
+        opacity: 1,
+    }, "4.8")
+  
+    */ 
+    
+    .fromTo("#f2_productTnc", 0.8, {
+      opacity:0,
+      ease: "expo.out"
+    },
+    {
+        opacity: 1,
+    }, "5.2")
+  
+  
+    
+  
+    .fromTo("#cta", 0.2, {
+      opacity:0,
+      scale: 0,
+      ease: "expo.out"
+       
+    },
+    {
+      opacity: 1,
+      scale:1,
+      ease: "power1.out"
+    }, "5")
+  
+    .fromTo("#copyRight", 0.2, {
+      opacity:0,
+      ease: "expo.out"
+       
+    },
+    {
+      opacity: 1, 
+      ease: "power1.out"
+    }, "5.2")
+  
+    .fromTo("#logo", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+       
+    },
+    {
+      opacity: 1, 
+      ease: "power1.out"
+    }, "1.5")
+  
+    .to("#logo", 0.5, {
+      opacity:0,
+      ease: "expo.out"
+    }, "4") 
+  
+  } 
+ 
+if(productType == "cityNewOption2"){
+
+    tl.fromTo("#wrapper", 0.5, {
+        opacity: 0,
+        ease: "expo.out"
+      },
+      {
+        opacity: 1
+      }, "0.5")
+      .fromTo("#click_through", 0.5, {
+        opacity: 0,
+        ease: "expo.out"
+      },
+      {
+        opacity: 1
+      }, "0.5")
+      
+      .fromTo("#product1", 0.5, {
+        x:728,
+        opacity: 0,
+        ease: "expo.out"
+      },
+      {
+        x:0,
+        opacity: 1,
+      }, "1")
+    
+      .to("#product1", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      }, "4")
+      
+      .fromTo("#product1_illustration", 0.5, {
+        y:90,
+        opacity: 0,
+        ease: "expo.out"
+      },
+      {
+        opacity: 1,
+        y: 0
+      }, "1")
+    
+      .to("#product1_illustration", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      }, "4.5")
+    
+       .fromTo("#product2", 0.5, {
+        y:90,
+        opacity: 0,
+        ease: "expo.out"
+      },
+      {
+        opacity: 1,
+        y: -55,
+      }, "4.1")
+    
+    
+      .fromTo("#f1_leaf", 0.8, {
+        rotation: -90,
+        ease: "expo.out"
+      },
+      {   rotation:0,
+          opacity: 1,
+      }, "0.5")
+      
+      .to("#f1_leaf", 0.5, {
+        opacity: 0,
+        ease: "expo.out"
+      }, "3.8") 
+      
+      .fromTo("#f1_copy", 0.8, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "1")
+      
+      .to("#f1_copy", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      }, "3.8") 
+    
+    
+      .fromTo("#frame1", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "0.5")
+    
+      .to("#frame1", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      }, "4.2") 
+    
+      .fromTo("#animation_container", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "0.5")
+    
+      .to("#animation_container", 0.5, {
+        opacity:0,
+        autoAlpha:0,
+        ease: "expo.out"
+      }, "4.1") 
+    
+    
+    
+    
+      .fromTo("#frame2", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "4.1")
+
+      .fromTo("#f2_leaf1", 0.5, {
+     
+        scale:0,
+        opacity:0,
+        ease: "expo.out"
+      },
+      {  
+          opacity: 1,
+          scale:1,
+      }, "4.4")
+      
+      /* Not used in 728x90
+    
+      .fromTo("#f2_leaf1", 0.5, {
+       
+        scale:0,
+        opacity:0,
+        ease: "expo.out"
+      },
+      {  
+          opacity: 1,
+          scale:1,
+      }, "4.4")
+    
+      .fromTo("#f2_leaf2", 0.5, {
+    
+        scale:0,
+        opacity:0,
+        ease: "expo.out"
+      },
+      {  
+          scale:1,
+          opacity: 1,
+      }, "4.6")
+    
+    
+      .fromTo("#f2_leaf3", 0.5, {
+        scale:0,
+        opacity:0,
+        ease: "expo.out"
+      },
+      {   
+          opacity: 1,
+          scale:1,
+      }, "4.8")
+      
+      */
+     
+    
+      
+    
+     
+    
+      .fromTo("#f2_copy1", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "4.8")
+
+      
+      .fromTo("#f2_copy2", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "4.8")
+     
+    
+      /* Not used in 728x90 
+    
+      .fromTo("#f2_copy2", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "4.8")
+    
+      .fromTo("#f2_copy3", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "4.8")
+    
+      */ 
+      
+      .fromTo("#f2_productTnc", 0.8, {
+        opacity:0,
+        ease: "expo.out"
+      },
+      {
+          opacity: 1,
+      }, "5.2")
+    
+    
+      
+    
+      .fromTo("#cta", 0.2, {
+        opacity:0,
+        scale: 0,
+        ease: "expo.out"
+         
+      },
+      {
+        opacity: 1,
+        scale:1,
+        ease: "power1.out"
+      }, "5")
+    
+      .fromTo("#copyRight", 0.2, {
+        opacity:0,
+        ease: "expo.out"
+         
+      },
+      {
+        opacity: 1, 
+        ease: "power1.out"
+      }, "5.2")
+    
+      .fromTo("#logo", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+         
+      },
+      {
+        opacity: 1, 
+        ease: "power1.out"
+      }, "1.5")
+    
+      .to("#logo", 0.5, {
+        opacity:0,
+        ease: "expo.out"
+      }, "4") 
+    
+  }   
+
+if(productType == "peds"){
+  tl.fromTo("#wrapper", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1
+  }, "0.5")
+  .fromTo("#click_through", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1
+  }, "0.5")
+  
+  .fromTo("#product1", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1,
+  }, "0.5")
+
+  .to("#product1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4")
+  
+  .fromTo("#product1_illustration", 0.5, {
+    y:90,
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1,
+    y: 0
+  }, "1")
+
+  .to("#product1_illustration", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4.5")
+
+   .fromTo("#product2", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1,
+  }, "4.1")
+
+  
+
+
+
+
+ 
+
+ 
+
+  .fromTo("#f1_leaf", 0.8, {
+    rotation: -90,
+    ease: "expo.out"
+  },
+  {   rotation:0,
+      opacity: 1,
+  }, "0.5")
+  
+  .to("#f1_leaf", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  }, "3.8") 
+  
+  .fromTo("#f1_copy", 0.8, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "1")
+  
+  .to("#f1_copy", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "3.8") 
+
+
+  .fromTo("#frame1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "0.5")
+
+  .to("#frame1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4.2") 
+
+  .fromTo("#animation_container", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "0.5")
+
+  .to("#animation_container", 0.5, {
+    opacity:0,
+    autoAlpha:0,
+    ease: "expo.out"
+  }, "4.1") 
+
+
+
+
+  .fromTo("#frame2", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.1")
+  
+
+  .fromTo("#f2_leaf1", 0.5, {
+   
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {  
+      opacity: 1,
+      scale:1,
+  }, "4.4")
+
+  .fromTo("#f2_leaf2", 0.5, {
+
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {  
+      scale:1,
+      opacity: 1,
+  }, "4.6")
+
+
+  .fromTo("#f2_leaf3", 0.5, {
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {   
+      opacity: 1,
+      scale:1,
+  }, "4.8")
+  
+  
+ 
+
+  
+
+ 
+
+  .fromTo("#f2_copy1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.5")
+  
+ 
+
+
+  .fromTo("#f2_copy2", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.8")
+
+  .fromTo("#f2_copy3", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.8")
+  
+  .fromTo("#f2_productTnc", 0.8, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.7")
+
+
+  
+
+  .fromTo("#cta", 0.2, {
+    opacity:0,
+    scale: 0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1,
+    scale:1,
+    ease: "power1.out"
+  }, "4.5")
+
+  .fromTo("#copyRight", 0.2, {
+    opacity:0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1, 
+    ease: "power1.out"
+  }, "4.7")
+
+  .fromTo("#logo", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1, 
+    ease: "power1.out"
+  }, "1.5")
+
+  .to("#logo", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4") 
+
+  .fromTo("#logo2", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1, 
+    ease: "power1.out"
+  }, "4.1")
+
+  .fromTo("#additionalCopy", 0.01, {
+    opacity:1,
+    ease: "expo.out"
+  },
+  {   width:"auto",
+      x:"134px",
+      opacity: 0,
+  }, "4")
+
+  .to("#additionalCopy", 0.5, {
+    opacity:1,
+    ease: "expo.out"
+  }, "4.5") 
+
+}
+
+if(productType == "boot"){
+  
+
+}
+
+if(productType == "pedsNew"){
+  tl.fromTo("#wrapper", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1
+  }, "0.5")
+  .fromTo("#click_through", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1
+  }, "0.5")
+  
+  .fromTo("#product1", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1,
+  }, "0.5")
+
+  .to("#product1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4")
+  
+  .fromTo("#product1_illustration", 0.5, {
+    y:90,
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1,
+    y: 0
+  }, "1")
+
+  .to("#product1_illustration", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4.5")
+
+   .fromTo("#product2", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  },
+  {
+    opacity: 1,
+  }, "4.1")
+
+
+  .fromTo("#f1_leaf", 0.8, {
+    opacity:0,
+    //rotation: -90,
+    ease: "expo.out"
+  },
+  {   rotation:0,
+      opacity: 1,
+  }, "0.5")
+  
+  .to("#f1_leaf", 0.5, {
+    opacity: 0,
+    ease: "expo.out"
+  }, "3.8") 
+  
+  .fromTo("#f1_copy", 0.8, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "1")
+  
+  .to("#f1_copy", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "3.8") 
+
+
+  .fromTo("#frame1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "0.5")
+
+  .to("#frame1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4.2") 
+
+  .fromTo("#animation_container", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "0.5")
+
+  .to("#animation_container", 0.5, {
+    opacity:0,
+    autoAlpha:0,
+    ease: "expo.out"
+  }, "4.1") 
+
+
+
+
+  .fromTo("#frame2", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.1")
+  
+
+  .fromTo("#f2_leaf1", 0.5, {
+   
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {  
+      opacity: 1,
+      scale:1,
+  }, "4.4")
+
+  .fromTo("#f2_leaf2", 0.5, {
+
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {  
+      scale:1,
+      opacity: 1,
+  }, "4.6")
+
+
+  .fromTo("#f2_leaf3", 0.5, {
+    scale:0,
+    opacity:0,
+    ease: "expo.out"
+  },
+  {   
+      opacity: 1,
+      scale:1,
+  }, "4.8")
+  
+
+  .fromTo("#f2_copy1", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.5")
+  
+ 
+
+
+  .fromTo("#f2_copy2", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.8")
+
+  .fromTo("#f2_copy3", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.8")
+  
+  .fromTo("#f2_productTnc", 0.8, {
+    opacity:0,
+    ease: "expo.out"
+  },
+  {
+      opacity: 1,
+  }, "4.7")
+
+
+  
+
+  .fromTo("#cta", 0.2, {
+    opacity:0,
+    scale: 0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1,
+    scale:1,
+    ease: "power1.out"
+  }, "4.5")
+
+  .fromTo("#copyRight", 0.2, {
+    opacity:0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1, 
+    ease: "power1.out"
+  }, "4.7")
+
+  .fromTo("#logo", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1, 
+    ease: "power1.out"
+  }, "1.5")
+
+  .to("#logo", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4") 
+
+  .fromTo("#logo2", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+     
+  },
+  {
+    opacity: 1, 
+    ease: "power1.out"
+  }, "4.1")
+
+  .fromTo("#additionalCopy", 0.01, {
+    opacity:1,
+    ease: "expo.out"
+  },
+  {   width:"auto",
+      x:"0px",
+      opacity: 0,
+  }, "4")
+
+  .to("#additionalCopy", 0.5, {
+    opacity:0,
+    ease: "expo.out"
+  }, "4.5") 
+
+}
+
+}
+
+//=========================
+
+nameSpace.triggerReport = function(){
+  let report = _uid + '_' + _Audience + '_' + _reportTrigger  + '_' +  _CreativeDimension +'_Clicked';
+  Enabler.reportCustomVariableCount2(report);
+  console.log('TRIGGER REPORT CALLED ------> ' + report)
+}
+
+nameSpace.reportingLabelReport = function(){
+  //let report = _Audience_Name_Target + '_' + _Contextual_Environment +'_'+ _Product + '_' + _TriggerDetail  + '_' +  _CreativeDimension  + '_' + _CustomCreativeField_1;
+  let report =  _uid  + '_' + _goal + '_' + _Audience + '_'+ _context + '_' + _reportTrigger + '_' + _product + '_' + _city + '_' + _DeviceType + '_' +  _CreativeDimension;
+  Enabler.reportCustomVariableCount1(report);
+  console.log('ACTIVE REPORTING LABEL ----->:' + report);
+}
+
+nameSpace.displayReport = function(){
+
+  var _customReports = 'Goal: ' + _goal + '\n' + 'Audience: ' + _Audience + '\n' + 'Contest: ' + _context + '\n' + 'Trigger: ' + _reportTrigger + '\n' + 'Product: ' + _product + '\n'  + 'City: ' + _city + '\n'  + 'Device Type: ' + _DeviceType + '\n' + 'Creative_dimension: ' + _CreativeDimension + '\n' ;		
+  //Enabler.reportCustomVariableCount5( _customReports );
+  nameSpace.reportingLabelReport()
+  console.log(' =======================================================================');
+  console.log(' ================= CUSTOM REPORTING START ============================== ');
+  console.log( _customReports );
+  console.log(' ================= CUSTOM REPORTING END ================================ ');
+  console.log(' =======================================================================');
+}
+})();
+
+
+
+window.onload = function() {
+};

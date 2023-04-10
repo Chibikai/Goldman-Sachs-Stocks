@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)https://s0.2mdn.net/sadbundle/8982639442903965469/index.html?e=69&leftOffset=0&topOffset=0&c=m4JjjGMOZJ&t=1&renderingType=2&ev=01_247 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zyrtec  :: 728x90</title>
+		
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="ad.size" content="width=728,height=90">
+		<link type="text/css" rel="stylesheet" media="screen, projection" href="./styles.css">
+		<script src="./Enabler_01_247.js.download"></script>
+		
+		
+		
+
+	</head>
+	<body class="cityNewCategory">
+
+		<div id="animation_container" style="width: 728px; height: 90px; position: absolute;">
+			<canvas id="canvas" width="728" height="90" style="position: absolute; display: block;"></canvas>
+			<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:728px; height:90px; position: absolute; left: 0px; top: 0px; display: block;">
+			</div>
+		</div>
+		
+		<div id="wrapper" style="position: absolute;">
+            <div id="click_through" style="position: absolute;"></div>
+           
+		<div id="mainContainer" class="dim_728x90" style="position: absolute; background-color: rgb(125, 194, 66);">
+
+	   <div id="logo" style="position: absolute;"><img src="./44660889_20230119020846438_logofit.png"></div>
+	   <div id="frame1" style="position: absolute;">
+          <div id="product1" style="position: absolute;"><img src="./44660889_20221214051755651_Daffadil-new.png"></div>
+
+		
+		 <div id="product1_illustration" style="position: absolute;"><img src="./44660889_20210128011429131_Dallas.png"></div>
+	   
+		<div id="f1_leaf" style="position: absolute;"><img src="./44660889_20210121083300470_city_f1_leaf.png"></div>
+        <div id="f1_copy" style="position: absolute; font-size: 20px; line-height: 21px;">Stay on top of allergies.</div>
+
+		
+		</div>
+
+		<div id="frame2" style="position: absolute;">
+			<div id="product2" style="position: absolute;"><img src="./44660889_20221214034039646_city_product-2-new.png"></div>
+		 
+		  <div id="f2_leaf1" style="position: absolute;"><img src="./44660889_20230207023056631_f2-shape-new.png"></div>
+		  <div id="f2_copy1" style="position: absolute; width: 270px;"><div>Works fast<sup style="top:-6px; left:2px;">*</sup> and stays strong day after day.</div></div>
+		  <div id="f2_copy2" style="position: absolute;"></div>
+		
+		  
+
+		  <div id="f2_productTnc" style="position: absolute;">*Starts working at hour 1.<br>Use only as directed.</div>
+  
+		  
+		  </div>
+
+		  <div id="cta" style="position: absolute; background-image: url(&quot;https://s0.2mdn.net/ads/richmedia/studio/44660889/44660889_20221214034033531_red_cta-bg.png&quot;);">BUY NOW</div>
+		  <div id="additionalCopy" style="position: absolute;"></div>
+
+		  <div style="display:none;"><img src="data:,"></div>
+		  <div id="copyRight" style="position: absolute;"><img src="./copy-right-2023.png"></div>
+		
+        
+			</div>
+
+			
+
+		</div>
+	
+
+
+	
+		<script src="./gsap_3.2.4_min.js.download"></script>
+		<script type="text/javascript" src="./index.js.download"></script>
+		<script src="./createjs_2019.11.15_min.js.download"></script>
+		<script src="./728x90.js.download"></script>
+
+		<script>
+			var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+			function initParticle() {
+				canvas = document.getElementById("canvas");
+				anim_container = document.getElementById("animation_container");
+				dom_overlay_container = document.getElementById("dom_overlay_container");
+				var comp=AdobeAn.getComposition("7641F927B52C474390C573C48798F357");
+				var lib=comp.getLibrary();
+				handleComplete({},comp);
+			}
+			function handleComplete(evt,comp) {
+				//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+				var lib=comp.getLibrary();
+				var ss=comp.getSpriteSheet();
+				exportRoot = new lib._728x90();
+				stage = new lib.Stage(canvas);	
+				//Registers the "tick" event listener.
+				fnStartAnimation = function() {
+					stage.addChild(exportRoot);
+					createjs.Ticker.framerate = lib.properties.fps;
+					createjs.Ticker.addEventListener("tick", stage);
+				}	    
+				//Code to support hidpi screens and responsive scaling.
+				AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+				AdobeAn.compositionLoaded(lib.properties.id);
+				fnStartAnimation();
+			}
+			</script>
+
+		<script type="text/javascript">
+
+			window.onload = function () {
+
+				//initParticle();	
+	        
+				if (!Enabler.isInitialized()) {
+					Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitialized);
+				} else {
+					enablerInitialized();
+				}
+	
+				function enablerInitialized() {
+					if (!Enabler.isVisible()) {
+						Enabler.addEventListener(studio.events.StudioEvent.VISIBLE, adVisible);
+					} else {
+						adVisible();
+					}
+				}
+	
+				function adVisible() {
+					
+					nboost.init();
+					
+				}
+				
+			};
+	
+		</script>
+		
+	
+
+<iframe style="display: none;" src="./saved_resource(10).html"></iframe></body></html>

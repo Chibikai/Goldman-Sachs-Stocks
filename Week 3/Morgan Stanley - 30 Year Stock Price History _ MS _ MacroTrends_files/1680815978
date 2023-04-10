@@ -1,0 +1,1 @@
+mdjs._dL['ct'] = {'QSearchC':'','MKTUP':'1','MCCS_Key':'VIX20L,VIX29L'};mdjs._dL['dt'] = {'mdt_163':'on','mdt_161':'on','mdt_7':'on','mdt_4':'on'};mdjs._dL['d'] = ["mdt_163","mdt_161","mdt_7","mdt_4"];if(window.hasOwnProperty("mdjsAsyncHandler")){ mdjsAsyncHandler();}if(window.hasOwnProperty("ICMarkitCallback")){ ICMarkitCallback();}

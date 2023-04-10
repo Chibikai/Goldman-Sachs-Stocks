@@ -1,0 +1,1097 @@
+(function (cjs, an) {
+
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [];
+
+
+// symbols:
+// helper functions:
+
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+
+
+(lib.mcParticle5 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFF00").s().p("AgYAZQgKgKAAgPQAAgOAKgKQAKgKAOAAQAPAAAKAKQAKAKAAAOQAAAPgKAKQgKAKgPAAQgOAAgKgKg");
+	this.shape.setTransform(5.5,5.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticle5, new cjs.Rectangle(2,2,7,7), null);
+
+
+(lib.mcParticle4 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFF00").s().p("AgUAWQgJgKAAgMQAAgLAJgJQAJgJALAAQAMAAAKAJQAIAJAAALQAAAMgIAKQgKAIgMAAQgLAAgJgIg");
+	this.shape.setTransform(5.5,5.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticle4, new cjs.Rectangle(2.5,2.5,6,6), null);
+
+
+(lib.mcParticle3 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFF00").s().p("AgRASQgHgIAAgKQAAgJAHgIQAIgHAJAAQAKAAAIAHQAHAIAAAJQAAAKgHAIQgIAHgKAAQgJAAgIgHg");
+	this.shape.setTransform(5,5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticle3, new cjs.Rectangle(2.5,2.5,5,5), null);
+
+
+(lib.mcParticle2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFF00").s().p("AgRARQgHgHAAgKQAAgKAHgHQAHgHAKAAQAKAAAHAHQAIAHAAAKQAAAKgIAHQgHAIgKAAQgKAAgHgIg");
+	this.shape.setTransform(5.5,5.5,0.8,0.8);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticle2, new cjs.Rectangle(3.5,3.5,4,4), null);
+
+
+(lib.mcParticle1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFF00").s().p("AgJALQgFgEAAgHQAAgFAFgEQAEgFAFAAQAHAAAEAFQAEAEAAAFQAAAHgEAEQgEAEgHAAQgFAAgEgEg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticle1, new cjs.Rectangle(5,5,3,3), null);
+
+
+(lib.mcParticleSet5 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.mcParticle1();
+	this.instance.setTransform(540.85,176.25,0.2125,0.2125,-36.981,0,0,8.2,8.6);
+	this.instance.alpha = 0.9008;
+
+	this.instance_1 = new lib.mcParticle1();
+	this.instance_1.setTransform(574.1,17.1,0.2125,0.2125,173.0204,0,0,8,8.1);
+	this.instance_1.alpha = 0.9008;
+
+	this.instance_2 = new lib.mcParticle1();
+	this.instance_2.setTransform(463.35,14.8,0.2125,0.2125,173.0204,0,0,8,8.3);
+	this.instance_2.alpha = 0.9008;
+
+	this.instance_3 = new lib.mcParticle1();
+	this.instance_3.setTransform(461.3,187.15,0.2125,0.2125,173.0204,0,0,8.2,8.1);
+	this.instance_3.alpha = 0.9008;
+
+	this.instance_4 = new lib.mcParticle1();
+	this.instance_4.setTransform(394.95,157,0.2125,0.2125,173.0204,0,0,8.1,7.9);
+	this.instance_4.alpha = 0.9008;
+
+	this.instance_5 = new lib.mcParticle1();
+	this.instance_5.setTransform(499.3,94.25,0.2125,0.2125,173.0204,0,0,8,8.1);
+	this.instance_5.alpha = 0.9008;
+
+	this.instance_6 = new lib.mcParticle1();
+	this.instance_6.setTransform(467.85,240.5,0.2125,0.2125,173.0204,0,0,8.2,8.1);
+	this.instance_6.alpha = 0.9008;
+
+	this.instance_7 = new lib.mcParticle1();
+	this.instance_7.setTransform(321.55,197.85,0.2125,0.2125,-6.9796,0,0,8.4,8.4);
+	this.instance_7.alpha = 0.9008;
+
+	this.instance_8 = new lib.mcParticle1();
+	this.instance_8.setTransform(342.85,46.95,0.2125,0.2125,-6.9796,0,0,8.2,8.6);
+	this.instance_8.alpha = 0.9008;
+
+	this.instance_9 = new lib.mcParticle1();
+	this.instance_9.setTransform(417.45,139.35,0.2125,0.2125,-6.9796,0,0,8.2,8.3);
+	this.instance_9.alpha = 0.9008;
+
+	this.instance_10 = new lib.mcParticle1();
+	this.instance_10.setTransform(240.85,176.25,0.2125,0.2125,-36.981,0,0,8.2,8.6);
+	this.instance_10.alpha = 0.9008;
+
+	this.instance_11 = new lib.mcParticle1();
+	this.instance_11.setTransform(274.1,17.1,0.2125,0.2125,173.0204,0,0,8,8.1);
+	this.instance_11.alpha = 0.9008;
+
+	this.instance_12 = new lib.mcParticle1();
+	this.instance_12.setTransform(163.35,14.8,0.2125,0.2125,173.0204,0,0,8,8.3);
+	this.instance_12.alpha = 0.9008;
+
+	this.instance_13 = new lib.mcParticle1();
+	this.instance_13.setTransform(161.3,187.15,0.2125,0.2125,173.0204,0,0,8.2,8.1);
+	this.instance_13.alpha = 0.9008;
+
+	this.instance_14 = new lib.mcParticle1();
+	this.instance_14.setTransform(94.95,157,0.2125,0.2125,173.0204,0,0,8.1,7.9);
+	this.instance_14.alpha = 0.9008;
+
+	this.instance_15 = new lib.mcParticle1();
+	this.instance_15.setTransform(199.3,94.25,0.2125,0.2125,173.0204,0,0,8,8.1);
+	this.instance_15.alpha = 0.9008;
+
+	this.instance_16 = new lib.mcParticle1();
+	this.instance_16.setTransform(167.85,240.5,0.2125,0.2125,173.0204,0,0,8.2,8.1);
+	this.instance_16.alpha = 0.9008;
+
+	this.instance_17 = new lib.mcParticle1();
+	this.instance_17.setTransform(21.55,197.85,0.2125,0.2125,-6.9796,0,0,8.4,8.4);
+	this.instance_17.alpha = 0.9008;
+
+	this.instance_18 = new lib.mcParticle1();
+	this.instance_18.setTransform(42.85,46.95,0.2125,0.2125,-6.9796,0,0,8.2,8.6);
+	this.instance_18.alpha = 0.9008;
+
+	this.instance_19 = new lib.mcParticle1();
+	this.instance_19.setTransform(117.45,139.35,0.2125,0.2125,-6.9796,0,0,8.2,8.3);
+	this.instance_19.alpha = 0.9008;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticleSet5, new cjs.Rectangle(0,0,600,250), null);
+
+
+(lib.mcParticleSet4 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.mcParticle2();
+	this.instance.setTransform(308.5,203.35,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance.alpha = 0.8992;
+	this.instance.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance.cache(2,2,8,8);
+
+	this.instance_1 = new lib.mcParticle2();
+	this.instance_1.setTransform(312.65,97.15,0.2125,0.2125,-29.999,0,0,8.2,8.3);
+	this.instance_1.alpha = 0.8992;
+	this.instance_1.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_1.cache(2,2,8,8);
+
+	this.instance_2 = new lib.mcParticle2();
+	this.instance_2.setTransform(598.5,137.95,0.2125,0.2125,-29.999);
+	this.instance_2.alpha = 0.8992;
+	this.instance_2.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_2.cache(2,2,8,8);
+
+	this.instance_3 = new lib.mcParticle2();
+	this.instance_3.setTransform(591.65,70.75,0.2125,0.2125,-29.999,0,0,8.2,8.3);
+	this.instance_3.alpha = 0.8992;
+	this.instance_3.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_3.cache(2,2,8,8);
+
+	this.instance_4 = new lib.mcParticle2();
+	this.instance_4.setTransform(611.85,26.9,0.2125,0.2125,180,0,0,8,8.2);
+	this.instance_4.alpha = 0.8992;
+	this.instance_4.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_4.cache(2,2,8,8);
+
+	this.instance_5 = new lib.mcParticle2();
+	this.instance_5.setTransform(558.95,25,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_5.alpha = 0.8992;
+	this.instance_5.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_5.cache(2,2,8,8);
+
+	this.instance_6 = new lib.mcParticle2();
+	this.instance_6.setTransform(502.15,11.2,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_6.alpha = 0.8992;
+	this.instance_6.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_6.cache(2,2,8,8);
+
+	this.instance_7 = new lib.mcParticle2();
+	this.instance_7.setTransform(479.2,182,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_7.alpha = 0.8992;
+	this.instance_7.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_7.cache(2,2,8,8);
+
+	this.instance_8 = new lib.mcParticle2();
+	this.instance_8.setTransform(544.15,96.4,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_8.alpha = 0.8992;
+	this.instance_8.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_8.cache(2,2,8,8);
+
+	this.instance_9 = new lib.mcParticle2();
+	this.instance_9.setTransform(540.1,137.9,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_9.alpha = 0.8992;
+	this.instance_9.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_9.cache(2,2,8,8);
+
+	this.instance_10 = new lib.mcParticle2();
+	this.instance_10.setTransform(494,143.6,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_10.alpha = 0.8992;
+	this.instance_10.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_10.cache(2,2,8,8);
+
+	this.instance_11 = new lib.mcParticle2();
+	this.instance_11.setTransform(446.3,110.3,0.2125,0.2125,180,0,0,8,8);
+	this.instance_11.alpha = 0.8992;
+	this.instance_11.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_11.cache(2,2,8,8);
+
+	this.instance_12 = new lib.mcParticle2();
+	this.instance_12.setTransform(564.3,185.4,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_12.alpha = 0.8992;
+	this.instance_12.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_12.cache(2,2,8,8);
+
+	this.instance_13 = new lib.mcParticle2();
+	this.instance_13.setTransform(479.2,235.75,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_13.alpha = 0.8992;
+	this.instance_13.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_13.cache(2,2,8,8);
+
+	this.instance_14 = new lib.mcParticle2();
+	this.instance_14.setTransform(596.75,232.35,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_14.alpha = 0.8992;
+	this.instance_14.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_14.cache(2,2,8,8);
+
+	this.instance_15 = new lib.mcParticle2();
+	this.instance_15.setTransform(428.8,219.8,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_15.alpha = 0.8992;
+	this.instance_15.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_15.cache(2,2,8,8);
+
+	this.instance_16 = new lib.mcParticle2();
+	this.instance_16.setTransform(369.2,235.85,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_16.alpha = 0.8992;
+	this.instance_16.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_16.cache(2,2,8,8);
+
+	this.instance_17 = new lib.mcParticle2();
+	this.instance_17.setTransform(339.2,175.65,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_17.alpha = 0.8992;
+	this.instance_17.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_17.cache(2,2,8,8);
+
+	this.instance_18 = new lib.mcParticle2();
+	this.instance_18.setTransform(343.25,134.15,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_18.alpha = 0.8992;
+	this.instance_18.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_18.cache(2,2,8,8);
+
+	this.instance_19 = new lib.mcParticle2();
+	this.instance_19.setTransform(389.35,128.45,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_19.alpha = 0.8992;
+	this.instance_19.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_19.cache(2,2,8,8);
+
+	this.instance_20 = new lib.mcParticle2();
+	this.instance_20.setTransform(409.5,180.15,0.2125,0.2125,0,0,0,8,8.2);
+	this.instance_20.alpha = 0.8992;
+	this.instance_20.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_20.cache(2,2,8,8);
+
+	this.instance_21 = new lib.mcParticle2();
+	this.instance_21.setTransform(369.2,70.7,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_21.alpha = 0.8992;
+	this.instance_21.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_21.cache(2,2,8,8);
+
+	this.instance_22 = new lib.mcParticle2();
+	this.instance_22.setTransform(409.55,43.05,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_22.alpha = 0.8992;
+	this.instance_22.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_22.cache(2,2,8,8);
+
+	this.instance_23 = new lib.mcParticle2();
+	this.instance_23.setTransform(335.3,61.7,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_23.alpha = 0.8992;
+	this.instance_23.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_23.cache(2,2,8,8);
+
+	this.instance_24 = new lib.mcParticle2();
+	this.instance_24.setTransform(449.75,61.7,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_24.alpha = 0.8992;
+	this.instance_24.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_24.cache(2,2,8,8);
+
+	this.instance_25 = new lib.mcParticle2();
+	this.instance_25.setTransform(275.9,138.65,0.2125,0.2125,-29.999,0,0,8.2,8.5);
+	this.instance_25.alpha = 0.8992;
+	this.instance_25.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_25.cache(2,2,8,8);
+
+	this.instance_26 = new lib.mcParticle2();
+	this.instance_26.setTransform(266.65,70.75,0.2125,0.2125,-29.999,0,0,8.2,8.3);
+	this.instance_26.alpha = 0.8992;
+	this.instance_26.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_26.cache(2,2,8,8);
+
+	this.instance_27 = new lib.mcParticle2();
+	this.instance_27.setTransform(286.85,26.9,0.2125,0.2125,180,0,0,8,8.2);
+	this.instance_27.alpha = 0.8992;
+	this.instance_27.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_27.cache(2,2,8,8);
+
+	this.instance_28 = new lib.mcParticle2();
+	this.instance_28.setTransform(233.95,25,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_28.alpha = 0.8992;
+	this.instance_28.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_28.cache(2,2,8,8);
+
+	this.instance_29 = new lib.mcParticle2();
+	this.instance_29.setTransform(177.15,11.2,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_29.alpha = 0.8992;
+	this.instance_29.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_29.cache(2,2,8,8);
+
+	this.instance_30 = new lib.mcParticle2();
+	this.instance_30.setTransform(154.2,182,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_30.alpha = 0.8992;
+	this.instance_30.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_30.cache(2,2,8,8);
+
+	this.instance_31 = new lib.mcParticle2();
+	this.instance_31.setTransform(219.15,96.4,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_31.alpha = 0.8992;
+	this.instance_31.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_31.cache(2,2,8,8);
+
+	this.instance_32 = new lib.mcParticle2();
+	this.instance_32.setTransform(215.1,137.9,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_32.alpha = 0.8992;
+	this.instance_32.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_32.cache(2,2,8,8);
+
+	this.instance_33 = new lib.mcParticle2();
+	this.instance_33.setTransform(169,143.6,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_33.alpha = 0.8992;
+	this.instance_33.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_33.cache(2,2,8,8);
+
+	this.instance_34 = new lib.mcParticle2();
+	this.instance_34.setTransform(121.3,110.3,0.2125,0.2125,180,0,0,8,8);
+	this.instance_34.alpha = 0.8992;
+	this.instance_34.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_34.cache(2,2,8,8);
+
+	this.instance_35 = new lib.mcParticle2();
+	this.instance_35.setTransform(239.3,185.4,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_35.alpha = 0.8992;
+	this.instance_35.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_35.cache(2,2,8,8);
+
+	this.instance_36 = new lib.mcParticle2();
+	this.instance_36.setTransform(154.2,235.75,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_36.alpha = 0.8992;
+	this.instance_36.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_36.cache(2,2,8,8);
+
+	this.instance_37 = new lib.mcParticle2();
+	this.instance_37.setTransform(271.75,232.35,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_37.alpha = 0.8992;
+	this.instance_37.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_37.cache(2,2,8,8);
+
+	this.instance_38 = new lib.mcParticle2();
+	this.instance_38.setTransform(103.8,219.8,0.2125,0.2125,180,0,0,8.2,8.2);
+	this.instance_38.alpha = 0.8992;
+	this.instance_38.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_38.cache(2,2,8,8);
+
+	this.instance_39 = new lib.mcParticle2();
+	this.instance_39.setTransform(44.2,235.85,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_39.alpha = 0.8992;
+	this.instance_39.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_39.cache(2,2,8,8);
+
+	this.instance_40 = new lib.mcParticle2();
+	this.instance_40.setTransform(14.2,175.65,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_40.alpha = 0.8992;
+	this.instance_40.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_40.cache(2,2,8,8);
+
+	this.instance_41 = new lib.mcParticle2();
+	this.instance_41.setTransform(18.25,134.15,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_41.alpha = 0.8992;
+	this.instance_41.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_41.cache(2,2,8,8);
+
+	this.instance_42 = new lib.mcParticle2();
+	this.instance_42.setTransform(64.35,128.45,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_42.alpha = 0.8992;
+	this.instance_42.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_42.cache(2,2,8,8);
+
+	this.instance_43 = new lib.mcParticle2();
+	this.instance_43.setTransform(84.5,180.15,0.2125,0.2125,0,0,0,8,8.2);
+	this.instance_43.alpha = 0.8992;
+	this.instance_43.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_43.cache(2,2,8,8);
+
+	this.instance_44 = new lib.mcParticle2();
+	this.instance_44.setTransform(44.2,70.7,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_44.alpha = 0.8992;
+	this.instance_44.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_44.cache(2,2,8,8);
+
+	this.instance_45 = new lib.mcParticle2();
+	this.instance_45.setTransform(84.55,43.05,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_45.alpha = 0.8992;
+	this.instance_45.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_45.cache(2,2,8,8);
+
+	this.instance_46 = new lib.mcParticle2();
+	this.instance_46.setTransform(10.3,61.7,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_46.alpha = 0.8992;
+	this.instance_46.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_46.cache(2,2,8,8);
+
+	this.instance_47 = new lib.mcParticle2();
+	this.instance_47.setTransform(124.75,61.7,0.2125,0.2125,0,0,0,8.2,8.2);
+	this.instance_47.alpha = 0.8992;
+	this.instance_47.filters = [new cjs.BlurFilter(1.5, 1.5, 3)];
+	this.instance_47.cache(2,2,8,8);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_47},{t:this.instance_46},{t:this.instance_45},{t:this.instance_44},{t:this.instance_43},{t:this.instance_42},{t:this.instance_41},{t:this.instance_40},{t:this.instance_39},{t:this.instance_38},{t:this.instance_37},{t:this.instance_36},{t:this.instance_35},{t:this.instance_34},{t:this.instance_33},{t:this.instance_32},{t:this.instance_31},{t:this.instance_30},{t:this.instance_29},{t:this.instance_28},{t:this.instance_27},{t:this.instance_26},{t:this.instance_25},{t:this.instance_24},{t:this.instance_23},{t:this.instance_22},{t:this.instance_21},{t:this.instance_20},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticleSet4, new cjs.Rectangle(0,0,625,250), null);
+
+
+(lib.mcParticleSet3 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.mcParticle3();
+	this.instance.setTransform(325.7,176.55,0.394,0.394,0,0,0,8.1,8);
+	this.instance.alpha = 0.5984;
+	this.instance.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance.cache(1,1,9,9);
+
+	this.instance_1 = new lib.mcParticle3();
+	this.instance_1.setTransform(356.3,141.6,0.394,0.394,0,0,0,8.1,8);
+	this.instance_1.alpha = 0.5984;
+	this.instance_1.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_1.cache(1,1,9,9);
+
+	this.instance_2 = new lib.mcParticle3();
+	this.instance_2.setTransform(296.9,127,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_2.alpha = 0.5984;
+	this.instance_2.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_2.cache(1,1,9,9);
+
+	this.instance_3 = new lib.mcParticle3();
+	this.instance_3.setTransform(332,52.2,0.394,0.394,0,0,0,8.1,8);
+	this.instance_3.alpha = 0.5984;
+	this.instance_3.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_3.cache(1,1,9,9);
+
+	this.instance_4 = new lib.mcParticle3();
+	this.instance_4.setTransform(645.35,204.4,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_4.alpha = 0.5984;
+	this.instance_4.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_4.cache(1,1,9,9);
+
+	this.instance_5 = new lib.mcParticle3();
+	this.instance_5.setTransform(634.35,15.4,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_5.alpha = 0.5984;
+	this.instance_5.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_5.cache(1,1,9,9);
+
+	this.instance_6 = new lib.mcParticle3();
+	this.instance_6.setTransform(476.3,164.55,0.394,0.394,0,0,0,8.1,8);
+	this.instance_6.alpha = 0.5984;
+	this.instance_6.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_6.cache(1,1,9,9);
+
+	this.instance_7 = new lib.mcParticle3();
+	this.instance_7.setTransform(583.5,233.9,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_7.alpha = 0.5984;
+	this.instance_7.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_7.cache(1,1,9,9);
+
+	this.instance_8 = new lib.mcParticle3();
+	this.instance_8.setTransform(501.15,127,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_8.alpha = 0.5984;
+	this.instance_8.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_8.cache(1,1,9,9);
+
+	this.instance_9 = new lib.mcParticle3();
+	this.instance_9.setTransform(561.8,154,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_9.alpha = 0.5984;
+	this.instance_9.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_9.cache(1,1,9,9);
+
+	this.instance_10 = new lib.mcParticle3();
+	this.instance_10.setTransform(413.95,227.55,0.394,0.394,0,0,0,8,8);
+	this.instance_10.alpha = 0.5984;
+	this.instance_10.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_10.cache(1,1,9,9);
+
+	this.instance_11 = new lib.mcParticle3();
+	this.instance_11.setTransform(601.15,80.75,0.394,0.394);
+	this.instance_11.alpha = 0.5984;
+	this.instance_11.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_11.cache(1,1,9,9);
+
+	this.instance_12 = new lib.mcParticle3();
+	this.instance_12.setTransform(463.7,40.7,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_12.alpha = 0.5984;
+	this.instance_12.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_12.cache(1,1,9,9);
+
+	this.instance_13 = new lib.mcParticle3();
+	this.instance_13.setTransform(414,90.2,0.394,0.394,0,0,0,8.1,8);
+	this.instance_13.alpha = 0.5984;
+	this.instance_13.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_13.cache(1,1,9,9);
+
+	this.instance_14 = new lib.mcParticle3();
+	this.instance_14.setTransform(541.5,67.35,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_14.alpha = 0.5984;
+	this.instance_14.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_14.cache(1,1,9,9);
+
+	this.instance_15 = new lib.mcParticle3();
+	this.instance_15.setTransform(470,77.65,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_15.alpha = 0.5984;
+	this.instance_15.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_15.cache(1,1,9,9);
+
+	this.instance_16 = new lib.mcParticle3();
+	this.instance_16.setTransform(252.35,204.4,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_16.alpha = 0.5984;
+	this.instance_16.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_16.cache(1,1,9,9);
+
+	this.instance_17 = new lib.mcParticle3();
+	this.instance_17.setTransform(241.35,15.4,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_17.alpha = 0.5984;
+	this.instance_17.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_17.cache(1,1,9,9);
+
+	this.instance_18 = new lib.mcParticle3();
+	this.instance_18.setTransform(83.3,164.55,0.394,0.394,0,0,0,8.1,8);
+	this.instance_18.alpha = 0.5984;
+	this.instance_18.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_18.cache(1,1,9,9);
+
+	this.instance_19 = new lib.mcParticle3();
+	this.instance_19.setTransform(190.5,233.9,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_19.alpha = 0.5984;
+	this.instance_19.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_19.cache(1,1,9,9);
+
+	this.instance_20 = new lib.mcParticle3();
+	this.instance_20.setTransform(108.15,127,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_20.alpha = 0.5984;
+	this.instance_20.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_20.cache(1,1,9,9);
+
+	this.instance_21 = new lib.mcParticle3();
+	this.instance_21.setTransform(168.8,154,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_21.alpha = 0.5984;
+	this.instance_21.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_21.cache(1,1,9,9);
+
+	this.instance_22 = new lib.mcParticle3();
+	this.instance_22.setTransform(20.95,227.55,0.394,0.394,0,0,0,8,8);
+	this.instance_22.alpha = 0.5984;
+	this.instance_22.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_22.cache(1,1,9,9);
+
+	this.instance_23 = new lib.mcParticle3();
+	this.instance_23.setTransform(211.35,83.95,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_23.alpha = 0.5984;
+	this.instance_23.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_23.cache(1,1,9,9);
+
+	this.instance_24 = new lib.mcParticle3();
+	this.instance_24.setTransform(70.7,40.7,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_24.alpha = 0.5984;
+	this.instance_24.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_24.cache(1,1,9,9);
+
+	this.instance_25 = new lib.mcParticle3();
+	this.instance_25.setTransform(21,90.2,0.394,0.394,0,0,0,8.1,8);
+	this.instance_25.alpha = 0.5984;
+	this.instance_25.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_25.cache(1,1,9,9);
+
+	this.instance_26 = new lib.mcParticle3();
+	this.instance_26.setTransform(148.5,67.35,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_26.alpha = 0.5984;
+	this.instance_26.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_26.cache(1,1,9,9);
+
+	this.instance_27 = new lib.mcParticle3();
+	this.instance_27.setTransform(77,77.65,0.394,0.394,0,0,0,8.1,8.1);
+	this.instance_27.alpha = 0.5984;
+	this.instance_27.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_27.cache(1,1,9,9);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_27},{t:this.instance_26},{t:this.instance_25},{t:this.instance_24},{t:this.instance_23},{t:this.instance_22},{t:this.instance_21},{t:this.instance_20},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticleSet3, new cjs.Rectangle(0,0,693,250), null);
+
+
+(lib.mcParticleSet2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.mcParticle4();
+	this.instance.setTransform(661.9,196.95,0.6964,0.6964,0,0,0,8.1,8);
+	this.instance.alpha = 0.5008;
+	this.instance.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance.cache(1,1,10,10);
+
+	this.instance_1 = new lib.mcParticle4();
+	this.instance_1.setTransform(772.45,229.8,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_1.alpha = 0.5008;
+	this.instance_1.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_1.cache(1,1,10,10);
+
+	this.instance_2 = new lib.mcParticle4();
+	this.instance_2.setTransform(629.45,107.15,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_2.alpha = 0.5008;
+	this.instance_2.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_2.cache(1,1,10,10);
+
+	this.instance_3 = new lib.mcParticle4();
+	this.instance_3.setTransform(747.25,131,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_3.alpha = 0.5008;
+	this.instance_3.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_3.cache(1,1,10,10);
+
+	this.instance_4 = new lib.mcParticle4();
+	this.instance_4.setTransform(582.65,213,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_4.alpha = 0.5008;
+	this.instance_4.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_4.cache(1,1,10,10);
+
+	this.instance_5 = new lib.mcParticle4();
+	this.instance_5.setTransform(773,54.95,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_5.alpha = 0.5008;
+	this.instance_5.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_5.cache(1,1,10,10);
+
+	this.instance_6 = new lib.mcParticle4();
+	this.instance_6.setTransform(614.9,13.8,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_6.alpha = 0.5008;
+	this.instance_6.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_6.cache(1,1,10,10);
+
+	this.instance_7 = new lib.mcParticle4();
+	this.instance_7.setTransform(524.35,176.75,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_7.alpha = 0.5008;
+	this.instance_7.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_7.cache(1,1,10,10);
+
+	this.instance_8 = new lib.mcParticle4();
+	this.instance_8.setTransform(688.75,89.25,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_8.alpha = 0.5008;
+	this.instance_8.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_8.cache(1,1,10,10);
+
+	this.instance_9 = new lib.mcParticle4();
+	this.instance_9.setTransform(535.5,41.55,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_9.alpha = 0.5008;
+	this.instance_9.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_9.cache(1,1,10,10);
+
+	this.instance_10 = new lib.mcParticle4();
+	this.instance_10.setTransform(457.9,208.95,0.6964,0.6964,0,0,0,8.1,8);
+	this.instance_10.alpha = 0.5008;
+	this.instance_10.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_10.cache(1,1,10,10);
+
+	this.instance_11 = new lib.mcParticle4();
+	this.instance_11.setTransform(477.45,126.15,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_11.alpha = 0.5008;
+	this.instance_11.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_11.cache(1,1,10,10);
+
+	this.instance_12 = new lib.mcParticle4();
+	this.instance_12.setTransform(393.75,100.4,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_12.alpha = 0.5008;
+	this.instance_12.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_12.cache(1,1,10,10);
+
+	this.instance_13 = new lib.mcParticle4();
+	this.instance_13.setTransform(404.9,13.8,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_13.alpha = 0.5008;
+	this.instance_13.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_13.cache(1,1,10,10);
+
+	this.instance_14 = new lib.mcParticle4();
+	this.instance_14.setTransform(366.6,197.05,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_14.alpha = 0.5008;
+	this.instance_14.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_14.cache(1,1,10,10);
+
+	this.instance_15 = new lib.mcParticle4();
+	this.instance_15.setTransform(457.9,54.95,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_15.alpha = 0.5008;
+	this.instance_15.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_15.cache(1,1,10,10);
+
+	this.instance_16 = new lib.mcParticle4();
+	this.instance_16.setTransform(325.5,137.3,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_16.alpha = 0.5008;
+	this.instance_16.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_16.cache(1,1,10,10);
+
+	this.instance_17 = new lib.mcParticle4();
+	this.instance_17.setTransform(151.9,196.95,0.6964,0.6964,0,0,0,8.1,8);
+	this.instance_17.alpha = 0.5008;
+	this.instance_17.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_17.cache(1,1,10,10);
+
+	this.instance_18 = new lib.mcParticle4();
+	this.instance_18.setTransform(262.45,229.8,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_18.alpha = 0.5008;
+	this.instance_18.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_18.cache(1,1,10,10);
+
+	this.instance_19 = new lib.mcParticle4();
+	this.instance_19.setTransform(119.45,107.15,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_19.alpha = 0.5008;
+	this.instance_19.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_19.cache(1,1,10,10);
+
+	this.instance_20 = new lib.mcParticle4();
+	this.instance_20.setTransform(237.25,131,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_20.alpha = 0.5008;
+	this.instance_20.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_20.cache(1,1,10,10);
+
+	this.instance_21 = new lib.mcParticle4();
+	this.instance_21.setTransform(72.65,213,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_21.alpha = 0.5008;
+	this.instance_21.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_21.cache(1,1,10,10);
+
+	this.instance_22 = new lib.mcParticle4();
+	this.instance_22.setTransform(263,54.95,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_22.alpha = 0.5008;
+	this.instance_22.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_22.cache(1,1,10,10);
+
+	this.instance_23 = new lib.mcParticle4();
+	this.instance_23.setTransform(104.9,13.8,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_23.alpha = 0.5008;
+	this.instance_23.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_23.cache(1,1,10,10);
+
+	this.instance_24 = new lib.mcParticle4();
+	this.instance_24.setTransform(32.6,149.8,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_24.alpha = 0.5008;
+	this.instance_24.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_24.cache(1,1,10,10);
+
+	this.instance_25 = new lib.mcParticle4();
+	this.instance_25.setTransform(178.75,89.25,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_25.alpha = 0.5008;
+	this.instance_25.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_25.cache(1,1,10,10);
+
+	this.instance_26 = new lib.mcParticle4();
+	this.instance_26.setTransform(25.5,41.55,0.6964,0.6964,0,0,0,8.1,8.1);
+	this.instance_26.alpha = 0.5008;
+	this.instance_26.filters = [new cjs.BlurFilter(2, 2, 3)];
+	this.instance_26.cache(1,1,10,10);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_26},{t:this.instance_25},{t:this.instance_24},{t:this.instance_23},{t:this.instance_22},{t:this.instance_21},{t:this.instance_20},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticleSet2, new cjs.Rectangle(0,0,810,250), null);
+
+
+(lib.mcParticleSet1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.mcParticle5();
+	this.instance.setTransform(450,44.5,1,1,0,0,0,8,8);
+	this.instance.alpha = 0.6008;
+	this.instance.filters = [new cjs.BlurFilter(4, 4, 3)];
+	this.instance.cache(0,0,11,11);
+
+	this.instance_1 = new lib.mcParticle5();
+	this.instance_1.setTransform(395,202.45,1,1,0,0,0,8,8);
+	this.instance_1.alpha = 0.6008;
+	this.instance_1.filters = [new cjs.BlurFilter(4, 4, 3)];
+	this.instance_1.cache(0,0,11,11);
+
+	this.instance_2 = new lib.mcParticle5();
+	this.instance_2.setTransform(556,115.5,1,1,0,0,0,8,8);
+	this.instance_2.alpha = 0.6008;
+	this.instance_2.filters = [new cjs.BlurFilter(4, 4, 3)];
+	this.instance_2.cache(0,0,11,11);
+
+	this.instance_3 = new lib.mcParticle5();
+	this.instance_3.setTransform(336,47.05,1,1,0,0,0,8,8);
+	this.instance_3.alpha = 0.6008;
+	this.instance_3.filters = [new cjs.BlurFilter(4, 4, 3)];
+	this.instance_3.cache(0,0,11,11);
+
+	this.instance_4 = new lib.mcParticle5();
+	this.instance_4.setTransform(150,44.5,1,1,0,0,0,8,8);
+	this.instance_4.alpha = 0.6008;
+	this.instance_4.filters = [new cjs.BlurFilter(4, 4, 3)];
+	this.instance_4.cache(0,0,11,11);
+
+	this.instance_5 = new lib.mcParticle5();
+	this.instance_5.setTransform(95,202.45,1,1,0,0,0,8,8);
+	this.instance_5.alpha = 0.6008;
+	this.instance_5.filters = [new cjs.BlurFilter(4, 4, 3)];
+	this.instance_5.cache(0,0,11,11);
+
+	this.instance_6 = new lib.mcParticle5();
+	this.instance_6.setTransform(256,115.5,1,1,0,0,0,8,8);
+	this.instance_6.alpha = 0.6008;
+	this.instance_6.filters = [new cjs.BlurFilter(4, 4, 3)];
+	this.instance_6.cache(0,0,11,11);
+
+	this.instance_7 = new lib.mcParticle5();
+	this.instance_7.setTransform(36,47.05,1,1,0,0,0,8,8);
+	this.instance_7.alpha = 0.6008;
+	this.instance_7.filters = [new cjs.BlurFilter(4, 4, 3)];
+	this.instance_7.cache(0,0,11,11);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticleSet1, new cjs.Rectangle(0,0,600,250), null);
+
+
+(lib.mcParticleAnimation = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_335 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(335).call(this.frame_335).wait(1));
+
+	// dust5
+	this.instance = new lib.mcParticleSet5();
+	this.instance.setTransform(150,125,1,1,0,0,0,150,125);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:-150},335).wait(1));
+
+	// dust4
+	this.instance_1 = new lib.mcParticleSet4();
+	this.instance_1.setTransform(150,125,1,1,0,0,0,150,125);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({x:-175},335).wait(1));
+
+	// dust3
+	this.instance_2 = new lib.mcParticleSet3();
+	this.instance_2.setTransform(150,125,1,1,0,0,0,150,125);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({x:-243},335).wait(1));
+
+	// dust2
+	this.instance_3 = new lib.mcParticleSet2();
+	this.instance_3.setTransform(150,125,1,1,0,0,0,150,125);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({x:-360},335).wait(1));
+
+	// dust1
+	this.instance_4 = new lib.mcParticleSet1();
+	this.instance_4.setTransform(150,125,1,1,0,0,0,150,125);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({x:-150},335).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-491.4,6.9,1271.5,236);
+
+
+(lib.mcParticleGroup = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.mcParticleAnimation();
+	this.instance.setTransform(680.75,780.15,0.9985,0.9986,-141.4989,0,0,-0.6,-0.1);
+
+	this.instance_1 = new lib.mcParticleAnimation();
+	this.instance_1.setTransform(744.95,787.1,0.9985,0.9987,-164.4357,0,0,-0.5,0);
+
+	this.instance_2 = new lib.mcParticleAnimation();
+	this.instance_2.setTransform(785.9,710.6,0.9985,0.9986,-136.3218,0,0,-0.8,0);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mcParticleGroup, new cjs.Rectangle(11.4,7.8,924.4,749.4000000000001), null);
+
+
+// stage content:
+(lib._728x90 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_74 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(74).call(this.frame_74).wait(1));
+
+	// pollen
+	this.instance = new lib.mcParticleGroup();
+	this.instance.setTransform(328.65,192.65,1,1,-118.1675,0,0,472.4,393.4);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(66).to({x:-11.35},0).to({alpha:0},7,cjs.Ease.quadOut).to({_off:true},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,-233.3,679.9,818.0999999999999);
+// library properties:
+lib.properties = {
+	id: '7641F927B52C474390C573C48798F357',
+	width: 728,
+	height: 90,
+	fps: 24,
+	color: "",
+	opacity: 1.00,
+	manifest: [],
+	preloads: []
+};
+
+
+
+// bootstrap callback support:
+
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.StageGL();
+
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+
+an.compositions = an.compositions || {};
+an.compositions['7641F927B52C474390C573C48798F357'] = {
+	getStage: function() { return exportRoot.stage; },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+
+
+an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
+	var lastW, lastH, lastS=1;		
+	window.addEventListener('resize', resizeCanvas);		
+	resizeCanvas();		
+	function resizeCanvas() {			
+		var w = lib.properties.width, h = lib.properties.height;			
+		var iw = window.innerWidth, ih=window.innerHeight;			
+		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+		if(isResp) {                
+			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+				sRatio = lastS;                
+			}				
+			else if(!isScale) {					
+				if(iw<w || ih<h)						
+					sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==1) {					
+				sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==2) {					
+				sRatio = Math.max(xRatio, yRatio);				
+			}			
+		}			
+		domContainers[0].width = w * pRatio * sRatio;			
+		domContainers[0].height = h * pRatio * sRatio;			
+		domContainers.forEach(function(container) {				
+			container.style.width = w * sRatio + 'px';				
+			container.style.height = h * sRatio + 'px';			
+		});			
+		stage.scaleX = pRatio*sRatio;			
+		stage.scaleY = pRatio*sRatio;			
+		lastW = iw; lastH = ih; lastS = sRatio;            
+		stage.tickOnUpdate = false;            
+		stage.update();            
+		stage.tickOnUpdate = true;		
+	}
+}
+
+
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;

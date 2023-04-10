@@ -1,0 +1,608 @@
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 18px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #5B9BD5;
+}
+
+html {
+	width:100%;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	
+	width:100%;
+
+	/* Margin bottom by footer height */
+	  margin-bottom: 80px;
+	  color: #444;
+	  background-color:#fff;
+	  font-family: 'Roboto', sans-serif;
+	  font-size:16px;
+}
+
+
+
+
+.header_content_container {
+	
+	width:100%;
+	background-color:#444;
+	padding: 0px;
+}
+
+.header_container {
+
+	min-width:1366px;
+	max-width:1366px;
+	height:50px;
+	padding:15px 0px 10px -20px; 
+	margin: 0 auto;
+	background-color:#444;
+
+}
+
+
+.header_logo {
+	
+	padding-top:10px;
+	margin-left:20px;
+	
+}
+
+
+.menu_parent_container {
+	
+	width:100%;
+	height:34px;
+	font-size:16px;
+	padding:15px 0px 10px -20px; 
+	margin:0px 0px 0px 0px;
+	background-color:#0089de;
+}
+
+.menu_container {
+	
+	width:1366px;
+	height:34px;
+	font-size:16px;
+	padding:11px 0px 0px -20px; 
+	margin: 0 auto;
+	background-color:#0089de;
+	z-index:1000;
+}
+
+.main_content_container {
+	
+	min-width: 1366px;
+	max-width: 1366px;
+	padding: 0px 30px 100px 30px;
+	
+}
+
+
+.leaderboard_ad {
+
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	min-height:100px;
+
+}
+
+
+#main_content {
+	
+	width:980px;
+	float:left;
+	
+}
+
+#right_sidebar {
+	
+	margin-left:20px;
+	width:300px;
+	float:left;
+	height:4200px;
+	
+}
+
+#sticky_ad_right {
+	
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+	
+	
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  margin-top: 10px;	
+  padding: 30px 20px 20px 20px;
+  color:#fff !important;
+  background-color:#444;
+  text-align: center;
+  font-size:16px;
+}
+
+.footer a {
+  color:#fff !important;
+}
+
+.ticker_search_box {
+	
+	background-color:#F5F5F5;
+	border: 1px solid #E0E0E0;
+	border-bottom:none;
+	padding:10px 30px 10px 10px;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	
+}
+
+.chart_buttons {
+	
+	margin: 5px 5px;
+	padding:3px 12px;
+	font-size:12px;
+	text-align:center;
+	cursor: pointer;
+	}
+	
+.download_data_button {
+
+	margin: 5px 8px 5px 0px;
+	text-align:center;	
+	font-size:12px;
+	padding: 8px 12px;
+
+
+}
+
+.related_tickers {
+	
+	width:100%;
+	background-color:#F5F5F5;
+	border: 1px solid #E0E0E0;
+	border-top: 0px;
+	padding:3px 30px 3px 10px;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	
+}
+
+.statement_type_select {
+
+	width:100%;
+	height:28px;
+	
+}
+
+.frequency_select {
+
+	width:100%;
+	height:28px;
+	font-weight:600;
+	
+}
+
+
+.select2 {
+	
+	text-align:left;
+	font-weight:600;
+	
+	}
+	
+#jqxInput {
+
+		width:100%;
+		height:28px;
+		
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  margin-left:-5px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #0089de;
+  color: white;
+  width:270px;
+  height: 34px;
+  font-size: 14px;
+  font-weight:bold;
+  border: none;
+  margin:0px;
+  cursor: pointer;
+ 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0089de;
+  min-width: 270px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  font-size: 14px;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-weight:bold;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	
+	background-color: #32a0e4;
+	
+	}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	
+	display: block;
+	
+	}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	
+	background-color: #0089de;
+	
+	}	
+
+
+#filter_result_count {
+	
+	width:100%;
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	padding:10px 15px;
+	background-color:#efefef;
+	border: 1px solid #dfdfdf;
+	margin:20px;
+	
+}
+
+
+select {
+  color: #444;
+  background-color: #FFF;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height:40px;
+  line-height: 40px;
+}
+
+.historical_data_table  {
+    table-layout: fixed;
+	margin:20px;
+}
+
+.historical_data_table tbody tr td {
+	
+	padding:6px;
+	vertical-align: middle !important;
+
+}
+
+
+.descriptors {
+	
+	text-align:center;
+	font-size:14px;
+	padding:15px;
+	
+}
+
+.td_metric_name {
+	
+	width:110px;
+	padding-top:17px;
+	
+}
+
+.metric_link {
+	
+	font-size:14px;
+	font-weight:bold;
+
+}
+
+.help_icon {
+	
+	width:15px;
+	height:18px; 
+	padding-bottom:3px;
+	
+}
+
+.td_min_value {
+	
+	width:75px;
+	text-align:center;
+	font-size:13px;
+	
+}
+
+.td_max_value {
+	
+	width:75px;
+	text-align:center;
+	font-size:13px;
+	
+}
+
+#myCombobox .form-control {
+	
+	background-color: #99d5ff;
+
+	
+}
+
+.dropdown-toggle {
+	
+	height:24px;
+	padding-top:0px;
+	padding-left:7px;
+	width:24px;
+	
+}
+
+.dropdown-menu-right {
+	
+	min-width:75px;
+	font-size:13px;
+	
+}
+
+.form-control {
+	
+	font-size:12px;	
+	padding:5px 10px;
+	height:24px;
+
+	
+}
+
+#myPills1 {
+	
+	margin:0px 15px 10px 0px;
+	
+}
+
+#jqxgrid {
+	
+	border-radius:0px;
+	
+}
+
+.jqx-widget-header {
+	
+    font-family: 'Roboto', sans-serif;
+	font-size:13px;	
+	
+}
+
+.jqx-item {
+	
+    font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	
+}
+
+.jqx-widget-content {
+	
+	border-color: #E0E0E0;
+	
+}
+
+#jqxgrid .jqx-grid-cell {
+	
+	border-color: #E0E0E0;
+	
+}
+
+#jqxgrid .jqx-grid-cell-pinned {
+	
+	border-color: #E0E0E0;
+	background-color: #F5F5F5;
+	
+}
+
+#jqxgrid .jqx-grid-column-header {
+	
+	border-color: #E0E0E0;
+	background-color: #F5F5F5;
+	
+}
+
+.clear_zero {
+
+	height:0px;
+
+}
+
+
+
+/* Styles for Popup Charts */
+
+.tpd-size-large {
+	
+	margin:0px;	
+	padding: 0px;
+}
+
+.popup_window_wrapper {
+	
+	margin:15px;
+	
+}
+
+.popup_stock_name {
+
+	font-size:16px;
+	font-weight:bold;
+	margin:5px;
+
+}
+
+.popup_stock_attributes {
+
+	font-size:13px;
+	font-weight:bold;
+	margin:5px;
+
+}
+
+.popup_stock_description {
+
+	font-size:12px;
+	margin:5px;
+
+}
+
+.jqx-input {
+	
+	font-size:14px;
+	
+} 
+
+.jqx-menu-item {
+	
+	font-size:14px;
+	
+}
+
+.jqx-input {
+	
+	padding:5px 10px;
+	
+}
+
+.nav-tabs {
+    border: 1px solid #E0E0E0;
+	background-color:#F5F5F5;
+	padding: 3px 5px 0px 5px;
+	margin: 0px 0px 10px 0px;
+}
+
+.nav-tabs>li>a {
+	font-size:13px;
+	padding:7px 12px;
+	font-weight:600;
+    margin-right: 0px;
+    line-height: 1.42857143;
+    border: 0px;
+    border-radius: 0px 0px 0 0;
+	background-color:#F5F5F5;
+
+}
+
+.nav-tabs>li>a .active {
+    margin-right: 0px;
+    line-height: 1.42857143;
+    border: 1px solid #E0E0E0;
+    border-radius: 0px 0px 0 0;
+	background-color:#F5F5F5;
+
+}
+
+.nav-tabs>li>a:hover { 
+    background-color: #F5F5F5;
+	text-decoration: underline;
+
+}
+
+.donate_buttons {
+
+	margin-left:20px;
+	
+	}
+
+.modal-body {
+
+	margin:10px 40px 20px 40px;
+	text-align:left;
+	font-size:18px;
+
+}
+
+.modal-body li {
+
+	margin-top:20px;
+	font-size:14px;
+
+}
+
+
+.modal_title {
+
+
+	text-align:center;
+	margin-bottom:30px;
+
+}
+
+.modal-body th{
+
+	margin-left:10px;
+	font-size:14px;
+}
+
+.modal-body td {
+
+	color: #337ab7;
+	margin-left:10px;
+	font-size:14px;
+}
+
+.modal_button {
+
+	margin-top:50px;
+	text-align:center;
+	font-size:16px;
+
+}
