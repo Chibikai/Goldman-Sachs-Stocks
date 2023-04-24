@@ -1,0 +1,193 @@
+﻿Measure Names,Month of Date,Day of Date,Calculation1,Measure Values
+Avg. Open,October,29,FALSE,414.019989
+Avg. Close,October,29,FALSE,413.350006
+AVGClose-AVGOpen,October,29,FALSE,-0.669983
+Avg. Open,October,27,FALSE,416.549988
+Avg. Close,October,27,FALSE,410.98999
+AVGClose-AVGOpen,October,27,FALSE,-5.559998
+Avg. Open,October,25,FALSE,416.209991
+Avg. Close,October,25,FALSE,414.75
+AVGClose-AVGOpen,October,25,FALSE,-1.459991
+Avg. Open,October,20,FALSE,411
+Avg. Close,October,20,FALSE,407.890015
+AVGClose-AVGOpen,October,20,FALSE,-3.109985
+Avg. Open,October,19,FALSE,415.179993
+Avg. Close,October,19,FALSE,412.160004
+AVGClose-AVGOpen,October,19,FALSE,-3.019989
+Avg. Open,October,14,FALSE,392
+Avg. Close,October,14,FALSE,391.200012
+AVGClose-AVGOpen,October,14,FALSE,-0.799988
+Avg. Open,October,13,FALSE,388
+Avg. Close,October,13,FALSE,386.309998
+AVGClose-AVGOpen,October,13,FALSE,-1.690002
+Avg. Open,October,11,FALSE,392.899994
+Avg. Close,October,11,FALSE,385.23999
+AVGClose-AVGOpen,October,11,FALSE,-7.660004
+Avg. Open,October,7,FALSE,392.910004
+Avg. Close,October,7,FALSE,390.619995
+AVGClose-AVGOpen,October,7,FALSE,-2.290009
+Avg. Open,October,4,FALSE,380.209991
+Avg. Close,October,4,FALSE,374.149994
+AVGClose-AVGOpen,October,4,FALSE,-6.059997
+Avg. Open,November,30,FALSE,383.529999
+Avg. Close,November,30,FALSE,380.98999
+AVGClose-AVGOpen,November,30,FALSE,-2.540009
+Avg. Open,November,29,FALSE,394
+Avg. Close,November,29,FALSE,386.540009
+AVGClose-AVGOpen,November,29,FALSE,-7.459991
+Avg. Open,November,24,FALSE,405
+Avg. Close,November,24,FALSE,399.190002
+AVGClose-AVGOpen,November,24,FALSE,-5.809998
+Avg. Open,November,18,FALSE,392.299988
+Avg. Close,November,18,FALSE,391.369995
+AVGClose-AVGOpen,November,18,FALSE,-0.929993
+Avg. Open,November,17,FALSE,401.850006
+Avg. Close,November,17,FALSE,391.549988
+AVGClose-AVGOpen,November,17,FALSE,-10.300018
+Avg. Open,November,16,FALSE,403.910004
+Avg. Close,November,16,FALSE,403.089996
+AVGClose-AVGOpen,November,16,FALSE,-0.820008
+Avg. Open,November,15,FALSE,406
+Avg. Close,November,15,FALSE,404.809998
+AVGClose-AVGOpen,November,15,FALSE,-1.190002
+Avg. Open,November,10,FALSE,402.329987
+Avg. Close,November,10,FALSE,399.119995
+AVGClose-AVGOpen,November,10,FALSE,-3.209992
+Avg. Open,November,9,FALSE,406.109985
+Avg. Close,November,9,FALSE,405.350006
+AVGClose-AVGOpen,November,9,FALSE,-0.759979
+Avg. Open,November,8,FALSE,409.890015
+Avg. Close,November,8,FALSE,408.339996
+AVGClose-AVGOpen,November,8,FALSE,-1.550019
+Avg. Open,November,5,FALSE,411.399994
+Avg. Close,November,5,FALSE,407.079987
+AVGClose-AVGOpen,November,5,FALSE,-4.320007
+Avg. Open,November,4,FALSE,414.649994
+Avg. Close,November,4,FALSE,408.070007
+AVGClose-AVGOpen,November,4,FALSE,-6.579987
+Avg. Open,November,3,FALSE,423.119995
+Avg. Close,November,3,FALSE,417.899994
+AVGClose-AVGOpen,November,3,FALSE,-5.220001
+Avg. Open,November,1,FALSE,417.070007
+Avg. Close,November,1,FALSE,416.700012
+AVGClose-AVGOpen,November,1,FALSE,-0.369995
+Avg. Open,December,31,FALSE,385
+Avg. Close,December,31,FALSE,382.549988
+AVGClose-AVGOpen,December,31,FALSE,-2.450012
+Avg. Open,December,30,FALSE,387.75
+Avg. Close,December,30,FALSE,385.519989
+AVGClose-AVGOpen,December,30,FALSE,-2.230011
+Avg. Open,December,29,FALSE,387.970001
+Avg. Close,December,29,FALSE,386.200012
+AVGClose-AVGOpen,December,29,FALSE,-1.769989
+Avg. Open,December,28,FALSE,388.929993
+Avg. Close,December,28,FALSE,387.609985
+AVGClose-AVGOpen,December,28,FALSE,-1.320008
+Avg. Open,December,20,FALSE,375.519989
+Avg. Close,December,20,FALSE,371.609985
+AVGClose-AVGOpen,December,20,FALSE,-3.910004
+Avg. Open,December,17,FALSE,389.209991
+Avg. Close,December,17,FALSE,381.799988
+AVGClose-AVGOpen,December,17,FALSE,-7.410003
+Avg. Open,December,13,FALSE,391.190002
+Avg. Close,December,13,FALSE,384.640015
+AVGClose-AVGOpen,December,13,FALSE,-6.549987
+Avg. Open,December,10,FALSE,398
+Avg. Close,December,10,FALSE,391.059998
+AVGClose-AVGOpen,December,10,FALSE,-6.940002
+Avg. Open,December,8,FALSE,401.230011
+Avg. Close,December,8,FALSE,397.320007
+AVGClose-AVGOpen,December,8,FALSE,-3.910004
+Avg. Open,December,3,FALSE,389.880005
+Avg. Close,December,3,FALSE,382.730011
+AVGClose-AVGOpen,December,3,FALSE,-7.149994
+Avg. Open,December,1,FALSE,383.820007
+Avg. Close,December,1,FALSE,376.480011
+AVGClose-AVGOpen,December,1,FALSE,-7.339996
+Avg. Open,October,28,TRUE,412
+Avg. Close,October,28,TRUE,414.820007
+AVGClose-AVGOpen,October,28,TRUE,2.820007
+Avg. Open,October,26,TRUE,416.369995
+Avg. Close,October,26,TRUE,417.609985
+AVGClose-AVGOpen,October,26,TRUE,1.23999
+Avg. Open,October,22,TRUE,409.98999
+Avg. Close,October,22,TRUE,414.320007
+AVGClose-AVGOpen,October,22,TRUE,4.330017
+Avg. Open,October,21,TRUE,406.799988
+Avg. Close,October,21,TRUE,407.589996
+AVGClose-AVGOpen,October,21,TRUE,0.790008
+Avg. Open,October,18,TRUE,408.01001
+Avg. Close,October,18,TRUE,413.690002
+AVGClose-AVGOpen,October,18,TRUE,5.679992
+Avg. Open,October,15,TRUE,402.309998
+Avg. Close,October,15,TRUE,406.070007
+AVGClose-AVGOpen,October,15,TRUE,3.760009
+Avg. Open,October,12,TRUE,386.220001
+Avg. Close,October,12,TRUE,386.529999
+AVGClose-AVGOpen,October,12,TRUE,0.309998
+Avg. Open,October,8,TRUE,390.829987
+Avg. Close,October,8,TRUE,392.809998
+AVGClose-AVGOpen,October,8,TRUE,1.980011
+Avg. Open,October,6,TRUE,382.380005
+Avg. Close,October,6,TRUE,388.049988
+AVGClose-AVGOpen,October,6,TRUE,5.669983
+Avg. Open,October,5,TRUE,378.100006
+Avg. Close,October,5,TRUE,385.809998
+AVGClose-AVGOpen,October,5,TRUE,7.709992
+Avg. Open,October,1,TRUE,379.440002
+Avg. Close,October,1,TRUE,380
+AVGClose-AVGOpen,October,1,TRUE,0.559998
+Avg. Open,November,26,TRUE,384.480011
+Avg. Close,November,26,TRUE,389.390015
+AVGClose-AVGOpen,November,26,TRUE,4.910004
+Avg. Open,November,23,TRUE,400.25
+Avg. Close,November,23,TRUE,406.339996
+AVGClose-AVGOpen,November,23,TRUE,6.089996
+Avg. Open,November,22,TRUE,393.160004
+Avg. Close,November,22,TRUE,396.160004
+AVGClose-AVGOpen,November,22,TRUE,3
+Avg. Open,November,19,TRUE,382.380005
+Avg. Close,November,19,TRUE,387.390015
+AVGClose-AVGOpen,November,19,TRUE,5.01001
+Avg. Open,November,12,TRUE,403
+Avg. Close,November,12,TRUE,404.910004
+AVGClose-AVGOpen,November,12,TRUE,1.910004
+Avg. Open,November,11,TRUE,400.140015
+Avg. Close,November,11,TRUE,402.339996
+AVGClose-AVGOpen,November,11,TRUE,2.199981
+Avg. Open,November,2,TRUE,415.100006
+Avg. Close,November,2,TRUE,423.850006
+AVGClose-AVGOpen,November,2,TRUE,8.75
+Avg. Open,December,27,TRUE,386.98999
+Avg. Close,December,27,TRUE,388.040009
+AVGClose-AVGOpen,December,27,TRUE,1.050019
+Avg. Open,December,23,TRUE,383.790009
+Avg. Close,December,23,TRUE,385.040009
+AVGClose-AVGOpen,December,23,TRUE,1.25
+Avg. Open,December,22,TRUE,380.420013
+Avg. Close,December,22,TRUE,382.329987
+AVGClose-AVGOpen,December,22,TRUE,1.909974
+Avg. Open,December,21,TRUE,376.429993
+Avg. Close,December,21,TRUE,380.320007
+AVGClose-AVGOpen,December,21,TRUE,3.890014
+Avg. Open,December,16,TRUE,395.130005
+Avg. Close,December,16,TRUE,397.369995
+AVGClose-AVGOpen,December,16,TRUE,2.23999
+Avg. Open,December,15,TRUE,389.5
+Avg. Close,December,15,TRUE,389.910004
+AVGClose-AVGOpen,December,15,TRUE,0.410004
+Avg. Open,December,14,TRUE,383.559998
+Avg. Close,December,14,TRUE,388.820007
+AVGClose-AVGOpen,December,14,TRUE,5.260009
+Avg. Open,December,9,TRUE,395.700012
+Avg. Close,December,9,TRUE,396.48999
+AVGClose-AVGOpen,December,9,TRUE,0.789978
+Avg. Open,December,7,TRUE,393.579987
+Avg. Close,December,7,TRUE,400.109985
+AVGClose-AVGOpen,December,7,TRUE,6.529998
+Avg. Open,December,6,TRUE,388.670013
+Avg. Close,December,6,TRUE,389.299988
+AVGClose-AVGOpen,December,6,TRUE,0.629975
+Avg. Open,December,2,TRUE,378
+Avg. Close,December,2,TRUE,387.540009
+AVGClose-AVGOpen,December,2,TRUE,9.540009
