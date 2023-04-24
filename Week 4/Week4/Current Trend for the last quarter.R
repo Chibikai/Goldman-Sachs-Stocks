@@ -99,7 +99,27 @@ MACDplot3<-plot(macd_line_last_quarter, type = "l", col = "blue", main = "MACD -
 lines(signal_line_last_quarter, col = "red")
 
 
-#last quarter trend tends to move in a doward trend for schwab
+#last quarter trend tends to move in a downward trend for schwab
 
 
 ### All 3 decrease into the same direction seems as if they all are on the same path???
+
+
+
+#trend indicators- support and resistance 
+install.packages("TTR")
+library(TTR)
+library(ggplot2)
+
+GS_data <- CurrentStockPriceTrend[CurrentStockPriceTrend$Close_GS == "Goldman Sachs",]
+
+# Add technical indicators to MACD plot
+GS_data$ma <- SMA(GS_data$Close_GS, n = 10)
+
+ggplot(GS_data, aes(x = Date, y = MACD)) +
+  geom_line() +
+  geom_line(aes(y = Signal, linetype = "Signal")) +
+  geom_line(aes(y = ma, linetype = "MA")) +
+  scale_linetype_manual(values = c("Signal" = "dashed", "MA" = "dotted")) +
+  ggtitle("Goldman Sachs MACD Comparison with Moving Average") +
+  labs(x = "Date", y = "Value")
